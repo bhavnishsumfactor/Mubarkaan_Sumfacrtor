@@ -1,0 +1,61 @@
+.faq-filters {
+    a {
+        border: $border;
+        border-radius: 3px;
+        margin: 5px;
+        margin: 5px 2px;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        &:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 10px solid $primary-color;
+            border-left: 10px solid transparent;
+        }
+        &.is--active {
+            background: $primary-color;
+            color: $primary-color-inverse;
+            border-color: $primary-color;
+        }
+    }
+}
+
+.highlighted {
+    background: #fbf9c9;
+}
+
+.list-faqs {
+    .faq_trigger {
+        position: relative;
+        display: block;
+        font-weight: 500;
+        padding-#{$end-direction}: 2rem;
+        &:after,
+        &:before {
+            background: $body-color;
+            content: '';
+            height: 2px;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 1px);
+            width: 12px;
+        }
+        &:before {
+            transform: rotate(90deg);
+            transition: all 0.2s ease-in-out;
+        }
+        &[aria-expanded='true']:before {
+            transform: rotate(0deg);
+        }
+    }
+    .faq_data {
+        margin-top: 2rem;
+    }
+}

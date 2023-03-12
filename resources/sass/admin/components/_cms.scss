@@ -1,0 +1,115 @@
+    .cms {
+        color: $txt-gray;
+        font-size: 1rem;
+        line-height: 1.5;
+        strong {
+            font-weight: 500;
+        }
+        h1 {
+            color: $txt-body;
+            font-size: calc(100% + 1vw);
+            font-weight: 300;
+        }
+        h2 {
+            color: $txt-body;
+            font-weight: 400;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+        h5 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        h6 {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        p {
+            color: currentColor;
+            // font-weight: 400;
+            margin-bottom: 1rem;
+            word-break: break-word;
+        }
+        &.space {
+            padding: 50px 0;
+        }
+        ul {
+            margin: 10px 0;
+            color: currentColor;
+            li {
+                position: relative;
+                padding: 5px 0;
+                margin: 0 15px;
+                color: currentColor;
+                list-style: disc;
+                display: list-item;
+                line-height: 1.8;
+                ul {
+                    li {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+        ol {
+            list-style: decimal;
+            list-style-position: inside;
+            margin: 10px 0;
+            color: currentColor;
+            li {
+                position: relative;
+                padding: 5px 0;
+                margin: 0 15px;
+                color: currentColor;
+                line-height: 1.8;
+                li {
+                    font-size: 0.875rem;
+                }
+            }
+            a {
+                color: currentColor;
+            }
+        }
+        table {
+            width: 100%;
+            th {
+                font-weight: 500;
+            }
+            th,
+            td {
+                padding: 10px;
+                font-size: 1rem;
+                vertical-align: top;
+                color: $txt-gray;
+                border: $border;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        figure {
+            text-align: center;
+            margin: 2rem 0;
+            img {
+                border: $border;
+                box-shadow: $shadow1;
+                border-radius: $radius4;
+            }
+            figcaption {
+                margin: 1rem 0;
+                color: $danger-color;
+            }
+        }
+        .emphasis-txt {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: $body-color;
+        }
+    }

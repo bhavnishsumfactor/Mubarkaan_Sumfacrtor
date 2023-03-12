@@ -1,0 +1,147 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge((0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 2), 6: ($spacer * 2.5), 7: ($spacer * 3), 8: ($spacer * 3.5), 9: ($spacer * 4), 10: ($spacer * 4.5), 11: ($spacer * 5), 12: ($spacer * 5.5), 13: ($spacer * 6), 14: ($spacer * 6.5), 15: ($spacer * 7), 16: ($spacer * 7.5), 17: ($spacer * 8), 18: ($spacer * 8.5), 19: ($spacer * 9), 20: ($spacer * 9.5), ), $spacers);
+:root {
+    --brand-color: #8318b4;
+    --brand-color-inverse: #FFFFFF;
+    --bg-white: #ffffff;
+    --bg-white-inverse: #000;
+    --bg-black: #000;
+    --bg-black-inverse: #fff;
+    --txt-body: #000;
+    --txt-gray: #888;
+    --border-color: #dee2e6;
+    --bg-gray: #f9f9fc;
+    --message-gray: #e6e6e6;
+    --shadow-rgb: 0 0 3px 0 hsl(0deg 0% 50% / 20%);
+}
+
+[data-theme="dark"] {
+    body {
+        background: #272727;
+        color: var(--txt-gray);
+        p,
+        .heading,
+        .section .section__heading,
+        .section .section__title,
+        .form-control,
+        .ti-input,
+        .multiselect__tags {
+            color: #b1b1b1;
+        }
+        .table {
+            color: #b1b1b1;
+        }
+         ::placeholder {
+            color: #b1b1b1;
+        }
+        .btn-light {
+            color: #b1b1b1;
+            &:hover {
+                color: var(--bg-white);
+            }
+        }
+        .switch input:checked~span:before,
+        .switch input:empty~span:before {
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .switch input:checked~span:after {
+            background: var(--brand-color);
+        }
+        .ct-label {
+            fill: #b1b1b1;
+            color: #b1b1b1;
+        }
+        .ct-grid {
+            stroke: #b1b1b1;
+        }
+        .chat .chat__input .chat__editor {
+            background-color: transparent;
+        }
+    }
+    &:root {
+        --brand-color: #8318b4;
+        --brand-color-inverse: #444444;
+        --border-color: #444444;
+        --border-color-white: #3d3d3d;
+        --txt-body: #fff;
+        --txt-gray: #888;
+        --bg-white: #000;
+        --bg-white-inverse: #fff;
+        --bg-black: #fff;
+        --bg-black-inverse: #000;
+        --bg-gray: #1d1d1d;
+    }
+    img {
+        filter: brightness(0.8) contrast(1.2);
+    }
+}
+
+$brand-color: var(--brand-color);
+$brand-color-inverse: var(--brand-color-inverse);
+//
+$input-placeholder-color:rgba(0, 0, 0, 0.4);
+//Colors
+$blue:#4285F4;
+$primary-color: #4285F4;
+$primary-color-inverse: #ffffff;
+//
+$secondary-color: #02cccd;
+$secondary-color-inverse: #ffffff;
+//
+$dark-color: #282a3c;
+$dark-color-inverse: #fff;
+//
+$light-color: #ffffff;
+$light-color-inverse: #888888;
+//
+$bg-white: var(--bg-white);
+$bg-white-inverse: var(--bg-white-inverse);
+//
+$bg-black: var(--bg-black);
+$bg-black-inverse: var(--bg-black-inverse);
+//
+$bg-gray:var(--bg-gray);
+//$bg-gray-inverse:;
+//
+$txt-body: var(--txt-body);
+$txt-gray:var(--txt-gray);
+//
+$gray-color: #8c8c8c;
+$gray-color-inverse: #f6f6f8;
+//
+$message-gray:var(--message-gray);
+//Borders
+$border-color:var(--border-color);
+$border-dark-color: #e2e5ec;
+$border-light-color: #e2e5ec;
+$border-color-white: #ffffff;
+$border:solid 1px $border-color;
+//Radius
+$radius4:4px;
+$radius3:3px;
+$radius2:2px;
+$radius1:1px;
+//shadow
+$shadow1: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+$shadow-rgb: var(--shadow-rgb);
+// font family
+$font-family1:'Open Sans';
+$font-family2:'Poppins';
+$font-family3:'Mulish';
+$font-family4:'Poppins';
+//Alerts
+$danger-color: red;
+$warning-color: #ffb822;
+$info-color: #5578eb;
+$success-color: #1dc9b7;
+//Border
+// $border-color: #e6e6e6;
+//CMS
+$cms-primary-color:#ff3366;

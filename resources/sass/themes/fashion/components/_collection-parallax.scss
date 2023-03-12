@@ -1,0 +1,13 @@
+.collection-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    &_data {
+        margin: 1rem 0;
+        h4 {
+            margin: 0;
+        }
+    }
+}

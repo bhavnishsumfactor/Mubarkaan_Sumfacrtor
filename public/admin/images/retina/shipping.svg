@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="zs-store-shipping" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 64 54" style="enable-background:new 0 0 64 54;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#E6EEF9;}
+	.st2{fill:none;stroke:#001684;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#001684;}
+</style>
+<g>
+	<path class="st0" d="M0,0h64v54H0V0z"/>
+	<g>
+		<path id="store-shipping-a" class="st1" d="M36,26H10v10h44V26h-0.3l-4.1-12H36V26z"/>
+	</g>
+	<path class="st2" d="M10.5,26.5v9h43v-9h-0.2l-4.1-12H36.5v12H10.5z"/>
+	<path class="st3" d="M6,35h3v1H6V35z M4,35h1v1H4V35z M55,35h3v1h-3V35z M59,35h1v1h-1V35z"/>
+	<g>
+		<path id="store-shipping-b" class="st0" d="M12.9,14H34v11H10L12.9,14z"/>
+	</g>
+	<path class="st2" d="M13.3,14.5l-2.6,10h22.9v-10H13.3z"/>
+	<path class="st3" d="M16,17h15v1H16V17z M19,19h12v1H19V19z"/>
+	<g>
+		<path id="store-shipping-c" class="st0" d="M39,17h7.5l2.5,7H39V17z"/>
+	</g>
+	<path class="st2" d="M39.5,17.5v6h8.8l-2.1-6H39.5z"/>
+	<circle class="st1" cx="17.7" cy="36.6" r="3.7"/>
+	<circle class="st1" cx="43.7" cy="36.6" r="3.7"/>
+	<circle class="st3" cx="17.7" cy="35.6" r="3.7"/>
+	<circle class="st3" cx="44.6" cy="35.6" r="3.7"/>
+</g>
+</svg>

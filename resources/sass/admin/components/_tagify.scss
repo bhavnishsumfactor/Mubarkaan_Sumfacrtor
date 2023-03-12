@@ -1,0 +1,27 @@
+.tagify-custom {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        font-size: 0.8rem;
+        list-style: none;
+        margin-bottom: 5px;
+        margin-#{$end-direction}: 5px;
+        border-radius: 3px;
+        padding-#{$start-direction}: 10px;
+        background: $bg-gray;
+        border: $border;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        span {
+            padding-#{$end-direction}: 5px;
+        }
+        .remove {
+            color: $txt-body;
+            padding: 5px 10px;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+}

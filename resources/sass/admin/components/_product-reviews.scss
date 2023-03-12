@@ -1,0 +1,81 @@
+$product__reviews:'product__reviews';
+
+.#{$product__reviews} {
+    $self: &;
+
+    #{$self}_list {
+        margin-bottom: 0.8rem;
+     
+        .card{
+            border-radius:0;
+            border: 0;
+        #{$self}_head {
+            display: flex;
+            align-items: flex-start;
+
+            #{$self}_image {
+
+                .avatar {
+                    width: 80px;
+                    height: 80px;
+                    overflow: hidden;
+                    box-shadow: 0 1px 4px $border-color;
+                    margin-#{$end-direction}: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+
+            #{$self}_info {
+                width: calc(100% - 80px);
+                margin-#{$start-direction}: auto;
+
+                .card-title {
+                    color: var(--gray);
+                    font-weight: 600;
+                }
+
+                .card-text {
+                    color: var(--gray);
+                }
+                .view__more{
+                    padding: 0.5rem 0;
+                    display: inline-flex;
+                    font-weight: 600;
+                    text-decoration: none;
+                    &:hover{
+                        color: currentColor;
+                    }
+                    &.active{
+                        &:before{
+                            content: "+";
+                            display: inline-block;
+                        }
+                    }
+                    &:before{
+                        content: "-";
+                        display: inline-block;
+                        margin-#{$end-direction}: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .card-footer {
+            padding: 0.5rem 1rem;
+            border-top:0;
+            #{$self}_footer {
+                display: flex;
+                // justify-content: space-between;
+                align-items: center;
+
+                .badge {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    }
+}

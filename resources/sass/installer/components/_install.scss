@@ -1,0 +1,480 @@
+$bg-gray:#f8f8f8;
+$secondary-color:#4f99f6;
+$body-color:#6d6d6d;
+$install-theme-color:#f13627;
+$counter-bg: #8f9396;
+// Custom.scss
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    font: inherit;
+    font-family: 'Poppins';
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.42857;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+html {
+    font-size: 16px;
+}
+
+small {
+    font-size: 80%;
+}
+
+strong {
+    font-weight: 500 !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+.backlayer {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clr-grey {
+    color: $body-color;
+}
+
+.form select,
+.form-control select {
+    line-height: 2;
+}
+
+.wizard {
+    background-color: $bg-gray;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 2px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    position: relative;
+    padding: 6rem 2rem 6rem 4rem;
+    overflow: hidden;
+    &:after {
+        content: "";
+        background: $install-theme-color url(../img/tribe-bg.png) no-repeat center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 38%;
+    }
+    .logo {
+        position: absolute;
+        top: 36px;
+        left: 4rem;
+        margin: 1rem auto;
+        max-width: 100px;
+        transition: all 0.5s ease-out;
+        transform: scale(1);
+        transform-origin: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__sidebar {
+        flex: 0 0 30%;
+        max-width: 30%;
+        position: relative;
+        z-index: 2;
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1.5rem;
+            padding-bottom: 5rem;
+            counter-reset: steps-counter;
+            li {
+                position: relative;
+                margin: 0.8rem 0;
+                padding-left: 30px;
+                cursor: not-allowed;
+                &:before {
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 0.8rem;
+                    background-color: $counter-bg;
+                    border-radius: 50%;
+                    color: $brand-color-inverse;
+                    position: absolute;
+                    left: -16px;
+                    top: 0;
+                    counter-increment: steps-counter;
+                    content: "" counter(steps-counter) " ";
+                }
+                &.completed {
+                    cursor: pointer;
+                    &:before {
+                        background: #fff url(../public/installer/images/tick.svg) no-repeat center;
+                        background-size: 12px;
+                        border: none;
+                        box-shadow: 0px 1px 6px 0px #0006;
+                        color: inherit;
+                    }
+                    h5,
+                    p {
+                        opacity: 1;
+                    }
+                }
+                &.inprogress {
+                    &:before {
+                        background: $secondary-color;
+                        color: #fff;
+                        font-weight: 500;
+                        border-color: $secondary-color;
+                        box-shadow: 0px 1px 6px 0px #0006;
+                    }
+                    h5 {
+                        font-weight: 500;
+                    }
+                    h5,
+                    p {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        h5 {
+            color: #fff;
+            font-size: 0.85rem;
+            margin: 0;
+            padding: 0;
+            opacity: 0.5;
+        }
+        p {
+            font-size: 0.7rem;
+            color: rgba(white, 80%);
+            opacity: 0.5;
+        }
+    }
+    &__main {
+        flex: 1;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+        border-radius: 2px;
+    }
+    &__steps {
+        height: 100%;
+        .card {
+            border: none;
+            background: none;
+            border-radius: 0;
+            height: 100%;
+            margin: 0;
+            &_head {
+                text-align: center;
+                padding: 2rem 0;
+                padding-bottom: 0;
+            }
+            &_body {
+                flex: 1;
+                h1 {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    color: $body-color;
+                }
+                h6 {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    color: #909090;
+                    padding: 0.4rem 1rem;
+                    margin: 0.5rem 0;
+                    background-color: $bg-gray;
+                    border-radius: $radius3;
+                }
+                .final-review {
+                    font-size: 0.9rem;
+                    .review-list {
+                        padding: 0 16px 20px;
+                        column-count: 2;
+                    }
+                    h5 {
+                        font-weight: 500;
+                        font-size: 1rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    li {
+                        padding: 4px 0;
+                        font-size: 0.8rem;
+                        color: $body-color;
+                        font-weight: 500;
+                        .value {
+                            color: $txt-gray;
+                        }
+                    }
+                }
+            }
+            &_foot {
+                border-top: $border;
+                padding: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.steps-data {
+    position: relative;
+    min-height: 600px;
+    //padding: 2rem 0;
+    margin: 2rem 0;
+    .data {
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        -webkit-transform: translateX(-72px);
+        transform: translateX(-72px);
+        -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            overflow: inherit;
+            -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+            -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+        }
+        &.welcome-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            .welcome-logo {
+                margin: 2rem auto;
+            }
+        }
+    }
+}
+
+.progress-center {
+    top: 40%;
+}
+
+.redirecting {
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+}
+
+.list-permission {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    .list-permission-item {
+        border: $border;
+        border-radius: 3px;
+        color: $body-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.8rem 1rem;
+        .rt {
+            display: flex;
+        }
+    }
+    .list-group-item-primary {
+        background-color: $border-color;
+    }
+}
+
+.divider {
+    border-bottom: $border;
+    margin: 1rem 0;
+}
+
+.upload_cover {
+    font-size: 1rem;
+}
+
+.colorpicker label {
+    font-size: 0.8rem;
+    padding-#{$start-direction}: 0;
+}
+
+.radio-inline label.radio {
+    margin-#{$end-direction}: 10px;
+}
+
+.licence-txt {
+    line-height: 1.7;
+    font-size: 0.8rem;
+    color: $body-color;
+    border-radius: $radius4;
+    border: $border;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.img-disclaimer {
+    background-color: $bg-gray;
+    padding: 0.8rem 1rem;
+    border-radius: $radius4;
+    font-size: 0.8rem;
+    color: #909090;
+    display: flex;
+    .icn {
+        margin-#{$end-direction}: 10px;
+        max-width: 40px;
+    }
+}
+
+.file-input label.btn {
+    color: #171717;
+    &:hover {
+        color: #fff;
+    }
+}
+    .progress-bar{
+        background: $brand-color;
+        opacity: 0.75;
+    }

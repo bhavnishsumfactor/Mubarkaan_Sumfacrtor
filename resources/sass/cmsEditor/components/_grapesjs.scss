@@ -1,0 +1,181 @@
+* ::-webkit-scrollbar-thumb {
+    background: rgba(18, 18, 18, 65%);
+}
+
+* ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.gjs-one-bg {
+    background-color: #121212;
+}
+
+.gjs-four-color {
+    color: $cms-primary-color;
+    &-h {
+         :hover {
+            color: $cms-primary-color;
+        }
+    }
+}
+
+.gjs-three-bg {
+    background-color: $cms-primary-color;
+}
+
+.gjs-cv-canvas {
+    height: calc(100% - 50px);
+    top: 50px;
+}
+
+.gjs-pn-panel {
+    padding: 8px 0 0 0;
+    &.gjs-pn-views {
+        .gjs-pn-buttons {
+            border-#{$start-direction}: $border;
+            border-color: rgba(255, 255, 255, 0.3);
+            .gjs-pn-btn {
+                width: 25%;
+            }
+        }
+    }
+    &.gjs-pn-options {
+        .gjs-pn-buttons {
+            .gjs-pn-btn {
+                margin-#{$end-direction}: 10px;
+            }
+        }
+    }
+}
+
+.gjs-pn-btn {
+    svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.skill-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: 0;
+    padding: 0.3rem 1rem;
+    outline: 0!important;
+    &:hover {
+        border: 0;
+        color: $cms-primary-color;
+    }
+}
+
+.gjs-pn-buttons {
+    height: 40px;
+}
+
+.gjs-pn-views-container {
+    padding-top: 3.5rem!important;
+}
+
+.gjs-editor,
+.gjs-clm-tags {
+    font-size: 0.85rem;
+}
+
+.gjs-sm-properties {
+    font-size: .8rem;
+    .gjs-radio-items {
+        align-items: center;
+        label {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
+
+.gjs-field {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: $radius4;
+}
+
+.gjs-blocks-cs {
+    font-family: 'Open Sans';
+    .gjs-block-categories {
+        padding-top: 0;
+        .gjs-blocks-c {
+            padding: 0.5rem;
+        }
+        .gjs-block {
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+            transition: all .2s ease 0s;
+            transition-property: box-shadow, color;
+            border: 0;
+            background: rgba(255, 255, 255, 0.05);
+            border: 0;
+            &:hover {
+                color: $cms-primary-color;
+            }
+        }
+        .gjs-title {
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+            font-family: inherit;
+            font-weight: 600;
+            text-transform: capitalize;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .gjs-block-label {
+            font-size: .825rem;
+            font-family: inherit;
+        }
+        .gjs-block svg {
+            fill: currentColor;
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+.icons-flex {
+    background-size: 70% 65% !important;
+    height: 24px;
+    width: 24px;
+    opacity: 0.9;
+    margin: auto;
+    &.icon-dir-row {
+        background: url('../../admin/images/retina/flex-dir-row.svg') no-repeat center;
+    }
+    &.icon-dir-row-rev {
+        background: url("../../admin/images/retina/flex-dir-row-rev.svg") no-repeat center;
+    }
+    &.icon-dir-col {
+        background: url("../../admin/images/retina/flex-dir-col.svg") no-repeat center;
+    }
+    &.icon-dir-col-rev {
+        background: url("../../admin/images/retina/flex-dir-col-rev.svg") no-repeat center;
+    }
+    &.icon-just-start {
+        background: url("../../admin/images/retina/flex-just-start.svg") no-repeat center;
+    }
+    &.icon-just-end {
+        background: url("../../admin/images/retina/flex-just-end.svg") no-repeat center;
+    }
+    &.icon-just-sp-bet {
+        background: url("../../admin/images/retina/flex-just-sp-bet.svg") no-repeat center;
+    }
+    &.icon-just-sp-ar {
+        background: url("../../admin/images/retina/flex-just-sp-ar.svg") no-repeat center;
+    }
+    &.icon-just-sp-cent {
+        background: url("../../admin/images/retina/flex-just-sp-cent.svg") no-repeat center;
+    }
+    &.icon-al-start {
+        background: url("../../admin/images/retina/flex-al-start.svg") no-repeat center;
+    }
+    &.icon-al-end {
+        background: url("../../admin/images/retina/flex-al-end.svg") no-repeat center;
+    }
+    &.icon-al-str {
+        background: url("../../admin/images/retina/flex-al-str.svg") no-repeat center;
+    }
+    &.icon-al-center {
+        background: url("../../admin/images/retina/flex-al-center.svg") no-repeat center;
+    }
+}

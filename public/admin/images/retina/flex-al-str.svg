@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+	<defs>
+		<style>
+			.a{fill:none;}.b{fill:#f5f5f5;stroke:#000;}.c{stroke:none;}
+		</style>
+	</defs>
+	<g transform="translate(-975 -4467)">
+		<g transform="translate(0.052)">
+			<path  fill="#fff"  d="M11.023,0H1.411c-.146,0-.292,0-.439,0A.917.917,0,0,0,0,.985a.915.915,0,0,0,.974.938c1.3,0,2.606,0,3.909,0H20.717c.146,0,.293.006.439,0A.907.907,0,0,0,22,.938a.863.863,0,0,0-.846-.927C19.891-.006,18.627,0,17.364,0Z" transform="translate(994.948 4490) rotate(-90)" />
+			<path  fill="#fff"  d="M11.023,0H1.411c-.146,0-.292,0-.439,0A.917.917,0,0,0,0,.985a.915.915,0,0,0,.974.938c1.3,0,2.606,0,3.909,0H20.717c.146,0,.293.006.439,0A.907.907,0,0,0,22,.938a.863.863,0,0,0-.846-.927C19.891-.006,18.627,0,17.364,0Z" transform="translate(977.948 4490) rotate(-90)" />
+		</g>
+		<g  fill="none" stroke="#fff"  transform="translate(991.01 4490) rotate(180)">
+			<rect  fill="none"  x="0.5" y="0.5" width="6.01" height="21" />
+		</g>
+	</g>
+</svg>

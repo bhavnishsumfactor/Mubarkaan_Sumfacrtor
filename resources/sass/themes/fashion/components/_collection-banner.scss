@@ -1,0 +1,11 @@
+.collection-banner {
+    .banners {
+        display: grid;
+        grid-gap: 1rem;
+        grid-auto-flow: column;
+        @include media-breakpoint-down(sm){
+            grid-auto-flow: row;
+            
+        }
+    }
+}

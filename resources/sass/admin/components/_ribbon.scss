@@ -1,0 +1,344 @@
+.ribbon {
+    position: relative;
+    .ribbon__target {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        position: absolute;
+        z-index: 1;
+        background-color: $brand-color;
+        color: #ffffff;
+        >.ribbon__inner {
+            z-index: -1;
+            position: absolute;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        &:after {
+            border-color: #082d88;
+        }
+    }
+    &--ver {
+        .ribbon__target {
+            padding: 5px 10px;
+            width: 36px;
+            height: 46px;
+            text-align: center;
+        }
+    }
+    &--shadow {
+        .ribbon__target {
+            -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+        }
+    }
+    &#{&}--round {
+        &.ribbon--top {
+            .ribbon__target {
+                border-top-right-radius: 4px;
+                border-top-left-radius: 4px;
+            }
+        }
+        &.ribbon--bottom {
+            .ribbon__target {
+                border-bottom-right-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+        &.ribbon--left {
+            .ribbon__target {
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+        &.ribbon--right {
+            .ribbon__target {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+        }
+    }
+    &--border-ver {
+        .ribbon__target {
+            &:after {
+                border-top: none;
+                border-bottom: none;
+                border-#{$start-direction}: 1px solid;
+                border-#{$end-direction}: 1px solid;
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 5px;
+                right: 5px;
+            }
+        }
+    }
+    &--border-hor {
+        .ribbon__target {
+            &:after {
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                border-#{$start-direction}: none;
+                border-#{$end-direction}: none;
+                content: '';
+                position: absolute;
+                top: 5px;
+                bottom: 5px;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+    &--border-dash-ver {
+        .ribbon__target {
+            &:after {
+                border-top: none;
+                border-bottom: none;
+                border-#{$start-direction}: 1px solid;
+                border-#{$end-direction}: 1px solid;
+                border-#{$start-direction}-style: dashed;
+                border-#{$end-direction}-style: dashed;
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 5px;
+                right: 5px;
+            }
+        }
+    }
+    &--border-dash-hor {
+        .ribbon__target {
+            &:after {
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                border-#{$start-direction}: none;
+                border-#{$end-direction}: none;
+                border-top-style: dashed;
+                border-bottom-style: dashed;
+                content: '';
+                position: absolute;
+                top: 5px;
+                bottom: 5px;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+    &--clip {
+        &.ribbon--left {
+            .ribbon__target {
+                left: -10px;
+                .ribbon__inner {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        border-style: solid;
+                        border-color: transparent !important;
+                        bottom: -10px;
+                        border-width: 0 10px 10px 0;
+                        border-#{$end-direction}-color: #222 !important;
+                        left: 0;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        border-style: solid;
+                        border-color: transparent !important;
+                        bottom: -10px;
+                    }
+                }
+            }
+        }
+        &.ribbon--right {
+            .ribbon__target {
+                right: -10px;
+                .ribbon__inner {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        border-style: solid;
+                        border-color: transparent !important;
+                        bottom: -10px;
+                        border-width: 0 0 10px 10px;
+                        border-#{$start-direction}-color: #222 !important;
+                        right: 0;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        border-style: solid;
+                        border-color: transparent !important;
+                        bottom: -10px;
+                    }
+                }
+            }
+        }
+    }
+    &--flag {
+        .ribbon__target {
+            >.ribbon__inner {
+                &:after {
+                    border-#{$start-direction}: 18px solid;
+                    border-#{$end-direction}: 18px solid;
+                    border-bottom: 1em solid transparent !important;
+                    bottom: -1em;
+                    content: '';
+                    height: 0;
+                    left: 0;
+                    position: absolute;
+                    width: 0;
+                }
+            }
+        }
+    }
+    &--brand {
+        .ribbon__target {
+            background-color: $brand-color;
+            color: #ffffff;
+            &:after {
+                border-color: rgba(255, 255, 255, 0.5);
+            }
+            >.ribbon__inner {
+                background-color: $brand-color;
+                color: #ffffff;
+                &:after {
+                    border-color: transparent;
+                    border-#{$start-direction}-color: $brand-color;
+                    border-#{$end-direction}-color: $brand-color;
+                }
+            }
+        }
+    }
+    &--light {
+        .ribbon__target {
+            background-color: $bg-white;
+            color: $dark-color;
+            &:after {
+                border-color: rgba(40, 42, 60, 0.5);
+            }
+            >.ribbon__inner {
+                background-color: $bg-white;
+                color: $dark-color;
+                &:after {
+                    border-color: transparent;
+                    border-#{$start-direction}-color: #ffffff;
+                    border-#{$end-direction}-color: #ffffff;
+                }
+            }
+        }
+    }
+    &--dark {
+        .ribbon__target {
+            background-color: $dark-color;
+            color: #ffffff;
+            &:after {
+                border-color: rgba(255, 255, 255, 0.5);
+            }
+            >.ribbon__inner {
+                background-color: $dark-color;
+                color: #ffffff;
+                &:after {
+                    border-color: transparent;
+                    border-#{$start-direction}-color: $dark-color;
+                    border-#{$end-direction}-color: $dark-color;
+                }
+            }
+        }
+    }
+    &--primary {
+        .ribbon__target {
+            background-color: $primary-color;
+            color: #ffffff;
+            &:after {
+                border-color: rgba(255, 255, 255, 0.5);
+            }
+            >.ribbon__inner {
+                background-color: $primary-color;
+                color: #ffffff;
+                &:after {
+                    border-color: transparent;
+                    border-#{$start-direction}-color: $primary-color;
+                    border-#{$end-direction}-color: $primary-color;
+                }
+            }
+        }
+    }
+    &--success {
+        .ribbon__target {
+            background-color: $success-color;
+            color: #ffffff;
+            &:after {
+                border-color: rgba(255, 255, 255, 0.5);
+            }
+            >.ribbon__inner {
+                background-color: $success-color;
+                color: #ffffff;
+                &:after {
+                    border-color: transparent;
+                    border-#{$start-direction}-color: $success-color;
+                    border-#{$end-direction}-color: $success-color;
+                }
+            }
+        }
+    }
+    &--info {
+        .ribbon__target {
+            background-color: $info-color;
+            color: #ffffff;
+            &:after {
+                border-color: rgba(255, 255, 255, 0.5);
+            }
+            >.ribbon__inner {
+                background-color: $info-color;
+                color: #ffffff;
+                &:after {
+                    border-color: transparent;
+                    border-#{$start-direction}-color: $info-color;
+                    border-#{$end-direction}-color: $info-color;
+                }
+            }
+        }
+    }
+    &--warning {
+        .ribbon__target {
+            background-color: $warning-color;
+            color: #111111;
+            &:after {
+                border-color: rgba(17, 17, 17, 0.5);
+            }
+            >.ribbon__inner {
+                background-color: $warning-color;
+                color: #111111;
+                &:after {
+                    border-color: transparent;
+                    border-#{$start-direction}-color: $warning-color;
+                    border-#{$end-direction}-color: $warning-color;
+                }
+            }
+        }
+    }
+    &--danger {
+        .ribbon__target {
+            background-color: $danger-color;
+            color: #ffffff;
+            &:after {
+                border-color: rgba(255, 255, 255, 0.5);
+            }
+            >.ribbon__inner {
+                background-color: $danger-color;
+                color: #ffffff;
+                &:after {
+                    border-color: transparent;
+                    border-#{$start-direction}-color: $danger-color;
+                    border-#{$end-direction}-color: $danger-color;
+                }
+            }
+        }
+    }
+}

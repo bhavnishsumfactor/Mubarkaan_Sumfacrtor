@@ -1,0 +1,14 @@
+.breadcrumb {
+    background: none;
+    border-radius: 0;
+    font-size: 0.75rem;
+    padding: 1rem 0;
+    margin: 0;
+    color: $txt-gray;
+    a {
+        color: currentColor;
+        &:hover {
+            color: $brand-color;
+        }
+    }
+}

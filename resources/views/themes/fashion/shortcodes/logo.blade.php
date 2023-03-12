@@ -1,0 +1,1 @@
+<img data-gjs-type="default" data-yk="" id="yk-header-logo" data-lite="{{ $logo }}" data-dark="{{ $darkLogo }}" src="{{$logo ?? url(config('theme').'/media/logos/logo.png')}}" alt="" data-ratio="{{$ratio ?? '16:9'}}">

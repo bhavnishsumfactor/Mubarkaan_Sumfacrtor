@@ -1,0 +1,93 @@
+.payment {
+    overflow-x: hidden;
+    @include media-breakpoint-up(xl) {
+        .container {
+            max-width: 1000px;
+            padding: inherit;
+        }
+    }
+    .content {
+        .container {
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+        }
+    }
+    .payment-header {
+        background: $bg-white;
+        background-size: cover;
+        border-bottom: $border;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        &_inner {
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include media-breakpoint-down(md) {
+                & {
+                    padding: 0;
+                    flex-direction: column;
+                }
+            }
+        }
+        .logo {
+            max-width: 150px;
+            display: block;
+            @include media-breakpoint-down(md) {
+                & {
+                    max-width: 100px;
+                }
+            }
+        }
+        .payment-amount {
+            flex: 1;
+            max-width: 338px;
+            width: 100%;
+            font-size: 0.8rem;
+            color: $txt-gray;
+            @include media-breakpoint-down(lg) {
+                & {
+                    max-width: none;
+                }
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    @include media-breakpoint-down(lg) {
+                        & {
+                            padding: 1rem;
+                        }
+                    }
+                }
+                .lable {
+                    display: block;
+                    font-weight: 500;
+                    color: $txt-body;
+                }
+            }
+        }
+    }
+    .customer-detail {
+        margin-bottom: 1.5rem;
+        @include media-breakpoint-down(md) {
+            padding-top: 1rem;
+        }
+        h5 {
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        p {
+            font-size: 0.85rem;
+            color: $txt-gray;
+        }
+    }
+}

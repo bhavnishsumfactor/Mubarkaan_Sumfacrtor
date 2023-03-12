@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.163" height="22.178" viewBox="0 0 29.163 22.178">
+    <defs>
+        <linearGradient id="prefix__linear-gradient" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-opacity=".102"/>
+            <stop offset="1" stop-opacity=".2"/>
+        </linearGradient>
+        <style>
+            .prefix__cls-3{fill:#d54b3d}.prefix__cls-4{fill:#d72b27}
+        </style>
+    </defs>
+    <g id="prefix__New_Logo_Gmail" transform="translate(-.215)">
+        <path id="prefix__Path_2486" d="M27.548 22.957H2.069a1.825 1.825 0 0 1-1.82-1.82V2.729a1.825 1.825 0 0 1 1.82-1.82h25.48a1.825 1.825 0 0 1 1.82 1.82v18.408a1.809 1.809 0 0 1-1.82 1.82z" data-name="Path 2486" transform="translate(-.029 -.805)" style="fill:#e3e3e3"/>
+        <path id="prefix__Path_2487" d="M29.846 59.58l10.894-8.762.078-.468-11.232-8.086-.026 16.926z" data-name="Path 2487" transform="translate(-25.987 -37.428)" style="fill:#231f20;opacity:.1"/>
+        <path id="prefix__Path_2488" d="M2.069 27.585a1.809 1.809 0 0 1-1.82-1.82V7.331c0-1.014.806-1.2 1.82-1.2s1.82.208 1.82 1.2v20.254z" class="prefix__cls-3" data-name="Path 2488" transform="translate(-.029 -5.433)"/>
+        <path id="prefix__Path_2489" d="M2.069 6.4c1.3 0 1.56.39 1.56.936v19.989h-1.56a1.565 1.565 0 0 1-1.56-1.56V7.331c0-.572.26-.936 1.56-.936zm0-.26c-1.014 0-1.82.208-1.82 1.2v18.425a1.809 1.809 0 0 0 1.82 1.82h1.82V7.331c0-1.014-.806-1.2-1.82-1.2z" class="prefix__cls-4" data-name="Path 2489" transform="translate(-.029 -5.433)"/>
+        <path id="prefix__Path_2490" d="M224.748 27.585h-1.82V7.279c0-1.014.806-1.144 1.82-1.144s1.82.13 1.82 1.144v18.512a1.8 1.8 0 0 1-1.82 1.794z" class="prefix__cls-3" data-name="Path 2490" transform="translate(-197.229 -5.433)"/>
+        <path id="prefix__Path_2491" d="M224.748 6.4c1.17 0 1.56.234 1.56.884v18.507a1.565 1.565 0 0 1-1.56 1.56h-1.56V7.279c0-.676.39-.884 1.56-.884zm0-.26c-1.014 0-1.82.13-1.82 1.144v20.327h1.82a1.809 1.809 0 0 0 1.82-1.82V7.279c0-1.014-.806-1.144-1.82-1.144z" class="prefix__cls-4" data-name="Path 2491" transform="translate(-197.229 -5.433)"/>
+        <path id="prefix__Path_2492" d="M20.927 38.766L1.58 19.268l1.018.414 13.468 9.7L30.547 18.76v18.212a1.8 1.8 0 0 1-1.82 1.794z" data-name="Path 2492" transform="translate(-1.208 -16.614)"/>
+        <path id="prefix__Path_2493" d="M14.8 13.486L1.047 3.5A1.837 1.837 0 0 1 .605.954a1.886 1.886 0 0 1 2.6-.39l11.622 8.45L26.527.46a1.809 1.809 0 0 1 2.548.416 1.809 1.809 0 0 1-.416 2.548L14.8 13.486z" class="prefix__cls-3" data-name="Path 2493" transform="translate(-.048 -.096)"/>
+        <path id="prefix__Path_2494" d="M27.519.26a1.589 1.589 0 0 1 1.274.65 1.6 1.6 0 0 1-.338 2.184l-13.7 9.984L1.155 3.2a1.587 1.587 0 0 1-.39-2.184 1.637 1.637 0 0 1 1.3-.65A1.5 1.5 0 0 1 3 .676L14.6 9.1l.156.1.156-.1L26.583.546a1.723 1.723 0 0 1 .936-.286zm0-.26a1.79 1.79 0 0 0-1.066.338l-11.7 8.554L3.131.442A1.813 1.813 0 0 0 2.039.1 1.871 1.871 0 0 0 .531.858 1.867 1.867 0 0 0 1 3.406l13.754 10.01L28.585 3.328A1.852 1.852 0 0 0 29 .78 1.782 1.782 0 0 0 27.519 0z" class="prefix__cls-4" data-name="Path 2494"/>
+    </g>
+</svg>

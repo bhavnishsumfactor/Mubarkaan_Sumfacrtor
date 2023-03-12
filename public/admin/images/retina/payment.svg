@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="zs-store-payment" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 64 54" style="enable-background:new 0 0 64 54;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill:none;stroke:#001684;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#001684;}
+	.st3{opacity:0.65;fill-rule:evenodd;clip-rule:evenodd;fill:#001684;enable-background:new    ;}
+</style>
+<g>
+	<path class="st0" d="M0,0h64v54H0V0z"/>
+	<g>
+		<path id="store-payment-a" class="st0" d="M24,12h29v20H24V12z"/>
+	</g>
+	<path class="st1" d="M24.5,12.5h28v19h-28V12.5z"/>
+	<path class="st2" d="M27,16h23v3H27V16z"/>
+	<circle class="st3" cx="42" cy="26" r="3"/>
+	<circle class="st2" cx="47" cy="26" r="3"/>
+	<g>
+		<path id="store-payment-b" class="st0" d="M11,22h29v20H11V22z"/>
+	</g>
+	<path class="st1" d="M11.5,22.5h28v19h-28V22.5z"/>
+	<path class="st2" d="M15.5,26h20c0.8,0,1.5,0.7,1.5,1.5l0,0c0,0.8-0.7,1.5-1.5,1.5h-20c-0.8,0-1.5-0.7-1.5-1.5l0,0
+		C14,26.7,14.7,26,15.5,26z"/>
+	<circle class="st3" cx="29" cy="36" r="3"/>
+	<circle class="st2" cx="34" cy="36" r="3"/>
+	<path class="st2" d="M19,12h3v1h-3V12z M17,12h1v1h-1V12z M41,41h3v1h-3V41z M45,41h1v1h-1V41z"/>
+</g>
+</svg>

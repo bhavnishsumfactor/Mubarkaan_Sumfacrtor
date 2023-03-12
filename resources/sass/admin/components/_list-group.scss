@@ -1,0 +1,193 @@
+.list-group {
+    &-item {
+        background: transparent;
+        border-color: $border-color;
+        span {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &.skeleton {
+            padding: 0 !important;
+            margin: 0.8rem 0;
+            min-height: 18px;
+            border: none;
+        }
+        &.active{
+            background-color:$bg-gray;
+            border-color:$border-color;
+            color: currentColor;
+            outline: 0;
+        }
+    }
+
+    &-xl {
+        .list-group-item {
+            padding: 2.25rem 2.25rem;
+        }
+    }
+    &-lg {
+        .list-group-item {
+            padding: 2rem 2rem;
+        }
+    }
+    &-md {
+        .list-group-item {
+            padding: 1.5rem 1.5rem;
+        }
+    }
+    &-sm {
+        .list-group-item {
+            padding: 1.25rem 1.25rem
+        }
+    }
+    &-flush-x {
+        .list-group-item {
+            padding-#{$start-direction}: 0;
+            padding-#{$end-direction}: 0;
+            border-#{$start-direction}: none;
+            border-#{$end-direction}: none;
+            border-radius: 0;
+        }
+    }
+    &-flush-y {
+        .list-group-item {
+            &:first-child {
+                padding-top: 0;
+                border-top: none;
+                border-radius: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+.list-switch {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.75rem;
+    li {
+        max-width: 20%;
+        flex: 0 0 20%;
+        padding: 0 .75rem;
+        padding-bottom: 1.5rem;
+    }
+    &--two {
+        li {
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+    }
+    &--three {
+        li {
+            max-width: 33.33%;
+            flex: 0 0 33.33%;
+            @include media-breakpoint-down(lg){
+                max-width: 50%;
+                flex: 0 0 50%;
+            }
+        }
+    }
+}
+
+.web-social-switch.list-switch{
+    &--three {
+        li {
+            span{
+                display: block;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 0.7rem 1.2rem;
+                position: relative;
+                height: auto;
+                color: #1a1a1a;
+                border: 1px solid #cecdcd;
+                top: 0;
+                border-radius: 2px;
+                i{
+                    width: 30px;
+                }
+                
+            }
+            
+        }
+        .active{
+            span {
+               
+                svg{
+                    fill: var(--light);
+                }
+                &::after{
+                    content: "";
+                    right: 20px;
+                    left: auto;
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    margin-left: -2px;
+                    margin-top: -6px;
+                    width: 5px;
+                    height: 10px;
+                    border-width: 0 2px 2px 0 !important;
+                    transform: rotate(45deg);
+                    border: solid var(--light);
+                }
+            }
+        }
+        .active.facebook{
+            span{
+                background-color: #3b5998;
+                border-color: #3b5998;
+                color: var(--light);
+            }
+        }
+        .active.twitter{
+            span{
+                background-color: #00acee;
+                border-color: #00acee;
+                color: var(--light);
+            }
+        }
+        .active.youtube{
+            span{
+                background-color: #FF0000;
+                border-color: #FF0000;
+                color: var(--light);
+            }
+        }
+        .active.instagram{
+            span{
+                background-color: #f05161;
+                border-color: #f05161;
+                color: var(--light);
+            }
+        }
+        .active.pinterest{
+            span{
+                background-color: #E60023;
+                border-color: #E60023;
+                color: var(--light);
+            }
+        }
+        .active.googleplus{
+            span{
+                background-color: #db4a39;
+                border-color: #db4a39;
+                color: var(--light);
+            }
+        }
+    }
+}
+.list-group__collections{
+    .list-group-item{
+        opacity: 1!important;
+        visibility: visible!important;
+        background-color: $bg-white;
+    }
+}

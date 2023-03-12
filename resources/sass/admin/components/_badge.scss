@@ -1,0 +1,283 @@
+$badge:'badge';
+
+.#{$badge} {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    &.#{$badge}--bold {
+        font-weight: 500;
+    }
+
+    &.#{$badge}--bolder {
+        font-weight: 600;
+    }
+
+    &.#{$badge}--boldest {
+        font-weight: 700;
+    }
+
+    &.#{$badge}--md {
+        height: 24px;
+        width: 24px;
+        font-size: 1rem;
+    }
+
+    &.#{$badge}--lg {
+        height: 35px;
+        width: 35px;
+        font-size: 1rem;
+    }
+
+    &.#{$badge}--xl {
+        height: 50px;
+        width: 50px;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    &.#{$badge}__pics {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+
+        .#{$badge}__pic {
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            overflow: hidden;
+            margin-#{$start-direction}: -0.7rem;
+            border: 1px solid #ffffff;
+            background-color: #f0f3ff;
+            color: #a1a8c3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .#{$badge}__pic--last {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &.#{$badge}--brand {
+        color: #ffffff;
+        background: $brand-color;
+    }
+
+    &.#{$badge}--outline {
+        &.#{$badge}--brand {
+            background: transparent;
+            color: $brand-color;
+            border: 1px solid $brand-color;
+
+            &.#{$badge}--outline-2x {
+                border: 2px solid $brand-color;
+                margin: 0;
+            }
+        }
+    }
+
+    &.#{$badge}--light {
+        color: $dark-color;
+        background: $bg-white;
+
+        &.#{$badge}--outline {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+
+            &.#{$badge}--outline-2x {
+                border: 2px solid #ffffff;
+            }
+        }
+    }
+
+    &.#{$badge}--dark {
+        color: $dark-color;
+        background: lighten($dark-color , 25%);
+
+        &.#{$badge}--outline {
+            background: transparent;
+            color: $dark-color;
+            border: 1px solid $dark-color;
+
+        }
+    }
+
+    &.#{$badge}--primary {
+        color:$primary-color;
+        background: lighten($primary-color, 30%);
+        fill:currentcolor;
+
+
+        &.#{$badge}--outline {
+            background: transparent;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            margin: 87px;
+
+        }
+    }
+
+    &.#{$badge}--success {
+        color: $success-color;
+        background: lighten($success-color, 45%);
+        fill:currentcolor;
+
+        &.#{$badge}--outline {
+            background: transparent;
+            color: $success-color;
+            border: 1px solid $success-color;
+
+        }
+    }
+
+    &.#{$badge}--info {
+        color: $info-color;
+        background: lighten($info-color, 30%);
+        fill:currentcolor;
+
+        &.#{$badge}--outline {
+            background: transparent;
+            color: $info-color;
+            border: 1px solid $info-color;
+
+        }
+    }
+
+    &.#{$badge}--warning {
+        color: $warning-color;
+        background: lighten($warning-color , 35%);
+        fill:currentcolor;
+
+        &.#{$badge}--outline {
+            background: transparent;
+            color: $warning-color;
+            border: 1px solid $warning-color;
+        }
+    }
+
+    &.#{$badge}--danger {
+        color: $danger-color;
+        background: lighten($danger-color , 30%);
+        fill:currentcolor;
+
+        &.#{$badge}--outline {
+            background: transparent;
+            color: $danger-color;
+            border: 1px solid $danger-color;
+        }
+    }
+
+    &.#{$badge}--inline {
+        height: 0;
+        width: auto;
+        padding: 0.75rem 0.75rem;
+        border-radius: 2px;
+        font-size: 0.88rem;
+        &.#{$badge}--md {
+            padding: 0.8rem 0.6rem;
+        }
+
+        &.#{$badge}--lg {
+            padding: 0.9rem 0.7rem;
+        }
+
+        &.#{$badge}--xl {
+            padding: 1rem 0.8rem;
+        }
+    }
+
+    &.#{$badge}--pill {
+        border-radius: 2rem;
+    }
+
+    &.#{$badge}--rounded {
+        border-radius: 4px;
+    }
+    &.#{$badge}-text--success{
+        fill:currentcolor;
+        color: $success-color;
+    }
+    &.#{$badge}-text--info{
+        fill:currentcolor;
+        color: $info-color;
+    }
+    &.#{$badge}-text--warning{
+        fill:currentcolor;
+        color: $warning-color;
+    }
+    &.#{$badge}-text--danger{
+        fill:currentcolor;
+        color: $danger-color;
+    }
+    &.#{$badge}-text--primary{
+        fill:currentcolor;
+        color: $primary-color;
+    }
+    &.#{$badge}-text--brand{
+        fill:currentcolor;
+        color: $brand-color;
+    }
+    &.#{$badge}--dot {
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: currentColor;
+            margin-right: 0.35rem;
+        }
+    
+        &.#{$badge}--sm {
+            line-height: 4px;
+            min-height: 4px;
+            min-width: 4px;
+            height: 4px;
+            width: 4px;
+        }
+
+        &.#{$badge}--lg {
+            line-height: 8px;
+            min-height: 8px;
+            min-width: 8px;
+            height: 8px;
+            width: 8px;
+        }
+    }
+
+    &.#{$badge}--xl {
+        line-height: 10px;
+        min-height: 10px;
+        min-width: 10px;
+        height: 10px;
+        width: 10px;
+    }
+
+    &.#{$badge}--square {
+        border-radius: 0;
+    }
+
+    &.#{$badge}--elevate {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+}

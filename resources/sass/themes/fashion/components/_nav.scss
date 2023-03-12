@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    padding: 0 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    &__item {
+        display: block;
+        &:hover {
+            background-color: $bg-gray;
+        }
+    }
+    &__link {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        padding: .55rem 1.75rem;
+        cursor: pointer;
+        transition: all .3s;
+        &-text {
+            flex-grow: 1;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+        &-icon {
+            flex: 0 0 18px;
+            font-size: 1.25rem;
+            line-height: 0;
+            margin-right: 10px;
+        }
+    }
+    &--block {
+        display: block !important;
+        padding: 1rem 0;
+    }
+}

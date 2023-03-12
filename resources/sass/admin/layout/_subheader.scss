@@ -1,0 +1,140 @@
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: transparent;
+    color: $brand-color-inverse;
+    height: 140px;
+    padding: 30px 0px !important;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .btn:not(.dropdown-toggle-split) {
+        margin-#{$start-direction}: 0.5rem;
+    }
+    .subheader__main {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0.25rem 0;
+        .btn:not(.dropdown-toggle-split) {
+            margin-#{$start-direction}: 0;
+            margin-#{$end-direction}: 0.5rem;
+        }
+        .subheader__mobile-toggle {
+            display: none;
+        }
+        .subheader__desc {
+            padding: 0 0.5rem 0 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #959cb6;
+        }
+        .subheader__breadcrumbs {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            .subheader__breadcrumbs-home {
+                padding: 0px 0.65rem 0px 0px;
+                transition: all 0.3s;
+                >i {
+                    font-size: 1rem;
+                    color: $brand-color-inverse;
+                }
+                &:hover>i {
+                    -webkit-transition: all 0.3s;
+                    transition: all 0.3s;
+                    color: var(--white);
+                }
+            }
+            .subheader__breadcrumbs-link {
+                padding: 0 0.35rem 0 0;
+                font-size: 1rem;
+                font-weight: 500;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+                color:currentColor;
+            }
+            .subheader__breadcrumbs-separator {
+                display: flex;
+                justify-content: content;
+                align-items: center;
+                padding: 0 0.35rem 0 0;
+                &:after {
+                    display: block;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    content: " ";
+                    background: #e7e8ef;
+                }
+            }
+        }
+        .subheader__group {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .subheader__toolbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+        .subheader__wrapper {
+            display: flex;
+            align-items: center;
+            .btn-subheader {
+                background: rgba(255, 255, 255, 0.2);
+                color: #fff;
+            }
+            .btn-outline-subheader {
+                background: none;
+                border-color: rgba(255, 255, 255, 0.2);
+                color: #fff;
+            }
+            .custom-date-range {
+                width: auto;
+                .mx-input {
+                    background: #fff;
+                    color: #212529;
+                    border: none;
+                    font-size: 1rem;
+                    border-radius: 0.25rem;
+                    height: 36px;
+                    min-width: 208px;
+                    &::placeholder {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+                .mx-icon-calendar,
+                .mx-icon-clear {
+                    color: #212529;
+                }
+            }
+        }
+    }
+    .subheader__search {
+        width: 175px;
+        display: inline-block;
+        .form-control {
+            font-size: 0.9rem;
+            height: 33px;
+            background: #f2f3f7;
+            border-color: #f2f3f7 !important;
+        }
+        .input-icon__icon {
+            i {
+                font-size: 1.2rem;
+                color: #a7abc3;
+            }
+        }
+    }
+}

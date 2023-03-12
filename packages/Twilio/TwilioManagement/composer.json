@@ -1,0 +1,13 @@
+{
+    "name": "Twilio/TwilioManagement",
+    "description": "This package contains all files related to twilio sms gateway.",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "Sarabjit Singh",
+            "email": "sarabjit.singh@fatbit.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

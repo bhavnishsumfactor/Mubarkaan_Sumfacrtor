@@ -1,0 +1,160 @@
+.collection-insta {
+    & {
+        position: relative;
+        .insta-wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(152px, 1fr));
+        }
+        .insta-profile {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 250px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: $radius3;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            .handle {
+                display: flex;
+                flex-direction: column;
+                .name {
+                    text-transform: uppercase;
+                    color: $txt-gray;
+                }
+                a {
+                    color: currentColor;
+                }
+            }
+        }
+    }
+    &-2 {
+        .insta-wrap {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            @include media-breakpoint-down(lg) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            @include media-breakpoint-down(sm) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .insta {
+                &:last-child {
+                    @include media-breakpoint-down(sm) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .insta-profile {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 250px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: $radius3;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            .handle {
+                display: flex;
+                flex-direction: column;
+                .name {
+                    text-transform: uppercase;
+                    color: $txt-gray;
+                }
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &-3 {
+        .insta-wrap {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            @include media-breakpoint-down(sm) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .insta-profile {
+            background-color: $bg-black;
+            color: $bg-black-inverse;
+            text-align: center;
+            padding: 1rem 10px;
+            .handle {
+                display: flex;
+                flex-direction: column;
+                .name {
+                    text-transform: uppercase;
+                    color: $txt-gray;
+                }
+                a {
+                    color: currentColor;
+                }
+            }
+        }
+    }
+}
+
+.insta-img {
+    min-height: 120px;
+}
+
+.instashop {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+    @include media-breakpoint-down(sm) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    position: relative;
+}
+
+.collection-insta-1 {
+    .insta-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .insta-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .insta-profile {
+        background-color: #FEEBE9;
+        color: #000;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include media-breakpoint-down(sm) {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        h6 {
+            text-transform: uppercase;
+            font-size: clamp(.75rem, .875vw, .875rem);
+            @include media-breakpoint-up(md) {
+                letter-spacing: 2.8px;
+            }
+            font-weight: normal;
+            margin: 0;
+        }
+        a {
+            font-size: clamp(1rem, 3vw, 3rem);
+            color: #F03627;
+        }
+    }
+}

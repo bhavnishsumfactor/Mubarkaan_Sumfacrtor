@@ -1,0 +1,15 @@
+.empty-state{
+    text-align: center;
+    &__content{
+        h5{
+            margin:0;
+        }
+        p{
+            color: #000;
+        }
+    }
+    &__img{
+        max-width: 140px;
+        margin: 0 auto 20px;
+    }
+}

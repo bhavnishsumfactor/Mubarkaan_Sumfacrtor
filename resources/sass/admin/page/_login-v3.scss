@@ -1,0 +1,107 @@
+.login-v3 {
+    display: flex;
+    height: 100%;
+    &__wrapper {
+        display: flex;
+        flex: 1 0 auto;
+    }
+    &-aside {
+        padding: 3rem 3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: space-between;
+        background: $brand-color;
+        max-width: 25%;
+        flex: 0 0 25%;
+        &__head {
+            display: flex;
+            justify-content: center;
+        }
+        &__logo {
+            img {
+                &[data-ratio="16:9"] {
+                    max-width: 160px;
+                }
+                &[data-ratio="1:1"] {
+                    max-width: 90px;
+                }
+            }
+        }
+        &__content {
+            h2 {
+                font-size: 4.5rem;
+                color: #ffffff;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+            }
+            h3 {
+                color: #ffffff;
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+            p {
+                font-size: 1.2rem;
+                font-weight: 200;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 0 auto;
+        padding: 3rem 3rem;
+        &__body {
+            flex: 1 0 auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .form--login {
+            width: 100%;
+            max-width: 400px;
+            .otp-field {
+                .form-control {
+                    height: 36px;
+                }
+            }
+            .form-control {
+                height: calc(2em + 2.3rem + 2px);
+            }
+            button {
+                &[type="submit"] {
+                    height: calc(2em + 2.3rem + 2px);
+                }
+            }
+            .otp__resend {
+                border: 0;
+                background: none;
+                margin-#{$end-direction}: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .login-v3__wrapper {
+        flex-direction: column;
+        flex: auto;
+        .login-v3-aside {
+            max-width: none;
+            align-items: center;
+            text-align: center;
+            flex: auto;
+        }
+        .login-v3-main {
+            flex: auto;
+        }
+    }
+}
+
+.field-validation-icon {
+    position: absolute;
+    right: 1rem;
+    top: 18px;
+}

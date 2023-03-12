@@ -1,0 +1,38 @@
+.table-sm {
+    thead {
+        th {
+            font-weight: 600;
+            border-top: $border;
+            border-bottom: $border;
+        }
+    }
+    &.table--noborder {
+        thead {
+            th {
+                border-top: 0;
+            }
+        }
+    }
+    th,
+    td {
+        padding: 0.8rem;
+        border-bottom: $border;
+        font-size: 0.8rem;
+        vertical-align: top;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+            text-align: right;
+        }
+    }
+}
+
+.table-bordered {
+    thead {
+        th {
+            border-width: 1px;
+        }
+    }
+}

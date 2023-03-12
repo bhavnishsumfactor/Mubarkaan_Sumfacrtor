@@ -1,0 +1,105 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "appstract/laravel-opcache": "^4.0",
+        "authorizenet/authorizenet": "^2.0",
+        "barryvdh/laravel-dompdf": "^0.8.6",
+        "brian2694/laravel-toastr": "^5.5",
+        "doctrine/dbal": "^3.0",
+        "facebook/php-business-sdk": "*",
+        "fideloper/proxy": "^4.0",
+        "google/apiclient": "^2.0",
+        "inertiajs/inertia-laravel": "^0.3.4",
+        "intervention/image": "^2.5",
+        "laravel/framework": "^8.0",
+        "laravel/passport": "^10.1",
+        "laravel/socialite": "^5.0",
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^3.0",
+        "league/omnipay": "^3.0",
+        "maatwebsite/excel": "^3.1",
+        "omnipay/paypal": "^3.0",
+        "scssphp/scssphp": "1.2",
+        "socialiteproviders/instagram": "^3.0",
+        "spatie/laravel-analytics": "^3.9",
+        "spatie/laravel-newsletter": "^4.7",
+        "spatie/laravel-sitemap": "^5.6",
+        "srmklive/paypal": "^3.0",
+        "stevebauman/location": "^5.0",
+        "stripe/stripe-php": "^7.14",
+        "twilio/sdk": "^5.39",
+        "yoeunes/toastr": "^1.2",
+        "zanysoft/laravel-zip": "^2.0"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.3",
+        "facade/ignition": "^2.3.6",
+        "fzaninotto/faker": "^1.9",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.0",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "classmap": [
+            "database/factories"
+        ],
+        "files": [
+            "app/Helpers/CommonHelper.php",
+            "packages/YoKartInstall/Installer/src/Helpers/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Twilio\\TwilioManagement\\": "packages/Twilio/TwilioManagement/src",
+            "YoKartTax\\SystemTaxManagement\\": "packages/YoKartTax/SystemTaxManagement/src",
+            "YoKartPaymentGateways\\Stripe\\": "packages/YoKartPaymentGateways/Stripe/src",
+            "YoKartPaymentGateways\\TwoCheckout\\": "packages/YoKartPaymentGateways/TwoCheckout/src",
+            "YoKartPaymentGateways\\Paypal\\": "packages/YoKartPaymentGateways/Paypal/src",
+            "YoKartPaymentGateways\\Bluesnap\\": "packages/YoKartPaymentGateways/Bluesnap/src",
+            "YoKartPaymentGateways\\AuthorizeDotNet\\": "packages/YoKartPaymentGateways/AuthorizeDotNet/src",
+            "YoKartPaymentGateways\\CashFree\\": "packages/YoKartPaymentGateways/CashFree/src",
+            "YoKartShipping\\SystemShipping\\": "packages/YoKartShipping/SystemShipping/src",
+            "YoKartShipping\\AfterShip\\": "packages/YoKartShipping/AfterShip/src",
+            "YoKartInstall\\Installer\\": "packages/YoKartInstall/Installer/src",
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

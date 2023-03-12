@@ -1,0 +1,40 @@
+.collection-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    &[data-view="2"] {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &[data-view="3"] {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &[data-view="4"] {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &[data-view="5"] {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @include media-breakpoint-down(md) {
+        &[data-view="3"] {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &[data-view="4"] {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &[data-view="5"] {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        grid-gap: 1px;
+        background-color: #f0f0f0;
+        &[data-view="3"] {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &[data-view="4"] {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &[data-view="5"] {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

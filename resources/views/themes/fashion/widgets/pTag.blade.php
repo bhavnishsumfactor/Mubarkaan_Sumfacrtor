@@ -1,0 +1,1 @@
+<p>{{__("LBL_DUMMY_TEXT")}}</p>

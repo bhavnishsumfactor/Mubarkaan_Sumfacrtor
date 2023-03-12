@@ -1,0 +1,63 @@
+    .app-page {
+        display: flex;
+        min-height: 666px;
+    }
+    
+    .app-nav {
+        //background: $brand-color;
+        //color: $brand-color-inverse;
+        border-#{$end-direction}: $border;
+        padding: 2rem 0;
+        &_item {
+            position: relative;
+            display: block;
+            padding: 1rem 15px;
+            color: $txt-gray;
+            &:hover {
+                .app-nav_title {
+                    transform: translateY(-50%);
+                    opacity: 1;
+                    z-index: 2;
+                }
+            }
+            &.active {
+                color: $brand-color;
+            }
+        }
+        &_icn {
+            .svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        &_title {
+            position: absolute;
+            top: 50%;
+            #{$start-direction}: 100%;
+            transform: translate(-50%, -50%);
+            transition: all 0.15s;
+            padding: 0 15px;
+            background-color: $brand-color;
+            color: $brand-color-inverse;
+            line-height: 36px;
+            white-space: nowrap;
+            border-radius: 0 6px 6px 0;
+            pointer-events: none;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    
+    .app-main {
+        //padding: 3rem;
+        flex: 1;
+        .current-color {
+            width: 150px!important;
+        }
+    }
+    
+    .smooth-dnd-drop-preview-constant-class {
+        border: 2px dashed $border-color;
+        border-radius: 4px;
+        background: $bg-gray;
+    }

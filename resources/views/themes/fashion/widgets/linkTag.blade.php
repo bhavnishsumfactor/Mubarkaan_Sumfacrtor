@@ -1,0 +1,1 @@
+<a href="" class="link">{{__("LNK_LINK")}}</a>

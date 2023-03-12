@@ -1,0 +1,37 @@
+.card {
+    border: $border;
+    background: $bg-white;
+    color: $bg-white-inverse;
+    &-header {
+        background: none;
+        border: none;
+        h6 {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        p {
+            color: $txt-gray;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.card {
+    margin-bottom: 30px;
+    border-radius: $radius4;
+    transition: all 0.3s ease-in-out;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 25px 0 25px;
+    }
+    &__title {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    &__section {
+        padding: 20px 25px;
+    }
+}

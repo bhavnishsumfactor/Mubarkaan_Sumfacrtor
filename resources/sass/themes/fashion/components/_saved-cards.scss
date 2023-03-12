@@ -1,0 +1,93 @@
+        .saved-cards {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            >li {
+                border-radius: $radius4;
+                border: $border;
+                background: $bg-white;
+                padding: 1rem;
+                position: relative;
+                color: $txt-gray;
+                &.selected,
+                &:hover {
+                    background: #005eff url(../media/visa-bg.jpg) no-repeat center;
+                    border-color: #005eff;
+                    box-shadow: 0 2px 4px 0 #cfd7df;
+                    color: #fff;
+                    .radio {
+                        input {
+                            border-color: #fff;
+                        }
+                    }
+                    .cards-detail {
+                        h6,
+                        p {
+                            color: currentColor;
+                        }
+                    }
+                }
+                .radio {
+                    input {
+                        width: 20px !important;
+                        height: 20px !important;
+                        max-width: 20px;
+                        flex: 0 0 20px;
+                        border-color: $border-color;
+                        background: none;
+                        vertical-align: inherit;
+                    }
+                }
+                .cards-detail {
+                    h6 {
+                        color: $txt-gray;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        margin-bottom: 2px;
+                    }
+                    p {
+                        color: $txt-body;
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                    }
+                }
+                .list-actions {
+                    position: absolute;
+                    top: 19px;
+                    #{$end-direction}: 0.5rem;
+                    -webkit-transition: all .1s ease-in-out;
+                    transition: all .1s ease-in-out;
+                    transition-property: -webkit-transform, transform, opacity;
+                    li {
+                        margin-#{$end-direction}: 0.5rem;
+                        display: flex;
+                        a {
+                            color: currentColor;
+                            .svg {
+                                width: 20px;
+                                height: 20px;
+                                fill: currentColor;
+                                vertical-align: inherit;
+                            }
+                            &:hover {
+                                .svg {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.add-new {
+                    border: none;
+                    border: $border;
+                    background: none;
+                    display: grid;
+                    place-items: center;
+                    padding: 1rem 0;
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }

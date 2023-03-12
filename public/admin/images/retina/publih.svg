@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="zs-store-publish" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 54" style="enable-background:new 0 0 64 54;" xml:space="preserve">
+    <style type="text/css">
+        .st0 {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: #FFFFFF;
+        }
+
+        .st1 {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: #E6EEF9;
+        }
+
+        .st2 {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: #001684;
+        }
+
+        .st3 {
+            fill: none;
+            stroke: #001684;
+        }
+    </style>
+    <g>
+        <path class="st0" d="M0,0h64v54H0V0z" />
+        <path class="st1" d="M31,52h2v2h-2V52z" />
+        <path class="st2" d="M19,51h3v1h-3V51z M17,51h1v1h-1V51z M43,51h3v1h-3V51z M47,51h1v1h-1V51z" />
+        <path class="st1" d="M23,34h19v7H23V34z M22,44h2v2h-2V44z M42,44h2v2h-2V44z" />
+        <g>
+            <path id="store-publish-a" class="st0" d="M14.3,42H25V30L14.1,41.5C13.9,41.7,14,42,14.3,42L14.3,42z" />
+        </g>
+        <path class="st3" d="M14.5,41.9L14.5,41.9L14.5,41.9z M14.8,41.5h9.7V31.3L14.8,41.5z" />
+        <g>
+            <path id="store-publish-b" class="st0" d="M50.9,41.5L40,30v12h10.7C51,42,51.1,41.7,50.9,41.5z" />
+        </g>
+        <path class="st3" d="M50.5,41.9L50.5,41.9L50.5,41.9z M50.2,41.5l-9.7-10.2v10.2H50.2L50.2,41.5z" />
+        <g>
+            <path id="store-publish-c" class="st1" d="M32.5,0L41,6.2V41H24V6.2L32.5,0z" />
+        </g>
+        <path class="st3" d="M32.5,0.6l-8,5.8v34.1h16V6.4C40.5,6.4,32.5,0.6,32.5,0.6z" />
+        <path class="st2" d="M26,41h13v2H26V41z M41.5,52H42v-3h-1v2h-3v1H41.5z M38,49.5V44h-1v8h1V49.5z M24,51v-2h-1v3h4v-1H24z M32,44
+		h1v6h-1V44z M27,44h1v8h-1V44z" />
+        <g>
+            <g>
+                <path id="store-publish-d" class="st0" d="M28,12h9v4h-9V12z" />
+            </g>
+            <path class="st3" d="M28.5,12.5h8v3h-8V12.5z" />
+        </g>
+    </g>
+</svg>

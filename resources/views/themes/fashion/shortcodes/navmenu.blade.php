@@ -1,0 +1,1 @@
+@include('themes.'.config('theme').'.widgets.partials.navigationLayout1', ['collections' => $collections])

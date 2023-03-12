@@ -1,0 +1,170 @@
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+    (
+        0: 0,
+        1: (
+            $spacer * 0.25,
+        ),
+        2: (
+            $spacer * 0.5,
+        ),
+        3: $spacer,
+        4: (
+            $spacer * 1.5,
+        ),
+        5: (
+            $spacer * 2,
+        ),
+        6: (
+            $spacer * 2.5,
+        ),
+        7: (
+            $spacer * 3,
+        ),
+        8: (
+            $spacer * 3.5,
+        ),
+        9: (
+            $spacer * 4,
+        ),
+        10: (
+            $spacer * 4.5,
+        ),
+        11: (
+            $spacer * 5,
+        ),
+        12: (
+            $spacer * 5.5,
+        ),
+        13: (
+            $spacer * 6,
+        ),
+        14: (
+            $spacer * 6.5,
+        ),
+        15: (
+            $spacer * 7,
+        ),
+        16: (
+            $spacer * 7.5,
+        ),
+        17: (
+            $spacer * 8,
+        ),
+        18: (
+            $spacer * 8.5,
+        ),
+        19: (
+            $spacer * 9,
+        ),
+        20: (
+            $spacer * 9.5,
+        ),
+    ),
+    $spacers
+);
+:root {
+    --brand-color: hsl(4deg 85% 55%);
+    --brand-color-inverse: #ffffff;
+    --bg-gray: rgb(244, 245, 250);
+    --bg-gray-inverse: ;
+    --bg-white: rgba(255, 255, 255, 1);
+    --bg-white-inverse: rgba(0, 0, 0, 1);
+    --bg-black: rgba(0, 0, 0, 1);
+    --bg-black-inverse: rgba(255, 255, 255, 1);
+    --border-color:hsl(0deg 0% 50% / 20%);
+    --bg-gray-light: rgba(244, 245, 250, 0.6);
+    --bg-gray-light-inverse: ;
+    --bg-gray-dark: rgba(244, 245, 250, 0.116);
+    --bg-gray-dark-inverse: ;
+    --txt-body: #000;
+    --txt-gray: #888;
+    --txt-white: rgba(255, 255, 255, 1);
+    --shadow-rgb: 0 0 3px 0 hsl(0deg 0% 50% / 20%);
+}
+
+[data-theme="dark"] {
+    body {
+        background: #121212;
+        color:rgba(228, 228, 235, 0.5);
+    }
+    &:root {
+        --bg-gray: #383838;
+        --bg-white: #121212;
+        --bg-white-inverse: #fff;
+        --bg-black: #fff;
+        --bg-black-inverse: #000;
+        //--border-color: #3d3d3d;
+        --bg-gray-light: rgba(56, 56, 56, 0.6);
+        --bg-gray-dark: rgba(56, 56, 56, 0.6);
+        --txt-body: #d1d1d1;
+        --txt-gray: #555;
+        //--shadow-rgb:0 0 15px rgb(255, 255, 255,  0.5);
+    }
+    img {
+        filter: brightness(0.8) contrast(1.2);
+    }
+
+   
+}
+
+//Colors
+$primary: #4285f4;
+$brand-color: var(--brand-color);
+$brand-color-inverse: var(--brand-color-inverse);
+//
+$primary-color: $brand-color;
+$primary-color-inverse: $brand-color-inverse;
+//
+$secondary-color: #aa66cc;
+$secondary-color-inverse: #fff;
+//
+$third-color: #474747;
+$third-color-inverse: #fff;
+//
+$bg-white: var(--bg-white);
+$bg-white-inverse: var(--bg-white-inverse);
+//
+$bg-black: var(--bg-black);
+$bg-black-inverse: var(--bg-black-inverse);
+//
+$txt-white: var(--txt-white);
+//Do not change
+//$body-color:  var(--txt-body);
+$txt-body: var(--txt-body);
+$txt-gray: var(--txt-gray);
+///backgrounds
+$bg-gray: var(--bg-gray);
+$bg-gray-light: var(--bg-gray-light);
+$bg-gray-dark: var(--bg-gray-dark);
+///border
+$border-color: var(--border-color);
+$border: solid 1px $border-color;
+$border-transparent: solid 1px transparent;
+//radius
+$radius4: 4px;
+$radius3: 3px;
+$radius2: 2px;
+$radius1: 1px;
+//shadow
+$shadow1: 0 0 3px 0 rgba(0, 0, 0, 0.2); 
+$shadow-rgb: var(--shadow-rgb);
+//status
+$success-color: #1dc9b7;
+$warning-color: #ffb822;
+$info-color: #5578eb;
+$danger-color: #fd397a;
+//font-family
+$font-family1: "Open Sans";
+$font-family2: "Poppins";
+$font-family3: "Muli";
+$font-family4: "Muli";
+//Star
+$star-color: #ffd700;

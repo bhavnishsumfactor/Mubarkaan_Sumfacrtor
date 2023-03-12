@@ -1,0 +1,26 @@
+.alert {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    margin-bottom: 1rem;
+    border: $border;
+    border-radius:2px;
+
+    &.alert-outline-primary {
+        border: 1px solid $brand-color;
+        color: $brand-color;
+    }
+
+    .alert-icon {
+        display: flex;
+        align-items: center;
+        padding: 0 1.25rem 0 0;
+
+        i {}
+    }
+
+    .alert-text {
+        align-self: center;
+        flex-grow: 1;
+    }
+}

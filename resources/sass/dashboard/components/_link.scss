@@ -1,0 +1,63 @@
+.link {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: $brand-color;
+    -webkit-transition: all .17s ease-out;
+    transition: all .17s ease-out;
+    user-select: none;
+    background: none;
+    border: none;
+    height: auto !important;
+    padding: 5px 0 !important;
+    /*line-height: 30px;*/
+    &:after,
+    &:before {
+        width: 100%;
+        height: 1px;
+        content: "";
+        position: absolute;
+        overflow: hidden;
+        bottom: 0px;
+        left: 0;
+        background-color: $primary-color;
+        -webkit-transition: -webkit-transform .4s cubic-bezier(.93, .01, 0, .98);
+        transition: -webkit-transform .4s cubic-bezier(.93, .01, 0, .98);
+        transition: transform .4s cubic-bezier(.93, .01, 0, .98);
+        transition: transform .4s cubic-bezier(.93, .01, 0, .98), -webkit-transform .4s cubic-bezier(.93, .01, 0, .98)
+    }
+    &:before {
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+    &:after {
+        -webkit-transition-delay: .25s;
+        transition-delay: .25s
+    }
+    &:hover {
+        color: $txt-body;
+        box-shadow: none !important;
+        &:after,
+        &:before {
+            background-color: $txt-body;
+        }
+        &:before {
+            -webkit-transition-delay: .25s;
+            transition-delay: .25s;
+            -webkit-transform: translateX(0);
+            transform: translateX(0)
+        }
+        &:after {
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%)
+        }
+    }
+}

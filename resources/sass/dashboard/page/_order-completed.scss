@@ -1,0 +1,233 @@
+.success-animation {
+    .svg-box {
+        display: inline-block;
+        position: relative;
+        width: 150px;
+        overflow: hidden;
+    }
+    .green-stroke {
+        stroke: #7CB342;
+    }
+    .red-stroke {
+        stroke: #FF6245;
+    }
+    .yellow-stroke {
+        stroke: #FFC107;
+    }
+    .circular circle.path {
+        stroke-dasharray: 330;
+        stroke-dashoffset: 0;
+        stroke-linecap: round;
+        opacity: 0.4;
+        animation: 0.7s draw-circle ease-out;
+    }
+    .checkmark {
+        stroke-width: 6.25;
+        stroke-linecap: round;
+        position: absolute;
+        top: 56px;
+        left: 49px;
+        width: 52px;
+        height: 40px;
+        path {
+            animation: 1s draw-check ease-out;
+        }
+    }
+    @keyframes draw-circle {
+        0% {
+            stroke-dasharray: 0, 330;
+            stroke-dashoffset: 0;
+            opacity: 1;
+        }
+        80% {
+            stroke-dasharray: 330, 330;
+            stroke-dashoffset: 0;
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.4;
+        }
+    }
+    @keyframes draw-check {
+        0% {
+            stroke-dasharray: 49, 80;
+            stroke-dashoffset: 48;
+            opacity: 0;
+        }
+        50% {
+            stroke-dasharray: 49, 80;
+            stroke-dashoffset: 48;
+            opacity: 1;
+        }
+        100% {
+            stroke-dasharray: 130, 80;
+            stroke-dashoffset: 48;
+        }
+    }
+    /*---------- Cross ----------*/
+    .cross {
+        stroke-width: 6.25;
+        stroke-linecap: round;
+        position: absolute;
+        top: 54px;
+        left: 54px;
+        width: 40px;
+        height: 40px;
+    }
+    .cross .first-line {
+        animation: 0.7s draw-first-line ease-out;
+    }
+    .cross .second-line {
+        animation: 0.7s draw-second-line ease-out;
+    }
+    @keyframes draw-first-line {
+        0% {
+            stroke-dasharray: 0, 56;
+            stroke-dashoffset: 0;
+        }
+        50% {
+            stroke-dasharray: 0, 56;
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dasharray: 56, 330;
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes draw-second-line {
+        0% {
+            stroke-dasharray: 0, 55;
+            stroke-dashoffset: 1;
+        }
+        50% {
+            stroke-dasharray: 0, 55;
+            stroke-dashoffset: 1;
+        }
+        100% {
+            stroke-dasharray: 55, 0;
+            stroke-dashoffset: 70;
+        }
+    }
+    .alert-sign {
+        stroke-width: 6.25;
+        stroke-linecap: round;
+        position: absolute;
+        top: 40px;
+        left: 68px;
+        width: 15px;
+        height: 70px;
+        animation: 0.5s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .alert-sign .dot {
+        stroke: none;
+        fill: #FFC107;
+    }
+    @keyframes alert-sign-bounce {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+.thanks-screen {
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        @include media-breakpoint-up(xl) {
+            max-width: 80%;
+        }
+    }
+}
+
+.order-completed {
+    h2 {
+        font-size: calc(112.5% + 1vw);
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    p {
+        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+        color: $txt-gray;
+    }
+    .svg {
+        fill: $brand-color;
+    }
+}
+
+.placed {
+    span {
+        margin-#{$end-direction}: 10px;
+    }
+}
+
+.completed-detail {
+    /*border-radius: 4px;
+    border: $border;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    li {
+        /*flex: 0 0 50%;
+        max-width: 50%;*/
+        flex: 1;
+        padding: 1.5rem;
+        margin: -1px;
+        background: $bg-white;
+        outline: $border;
+        @include media-breakpoint-down(lg) {
+            padding: 1rem;
+        }
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    h4 {
+        font-weight: 500;
+        font-size: 1rem;
+        display: flex;
+        .svg {
+            display: block;
+            margin-bottom: 4px;
+            margin-#{$end-direction}: 8px;
+            fill: $brand-color;
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+        }
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+.completed-cart {
+    margin: 2rem 0;
+    &-list {
+        max-height: 350px;
+    }
+    .sticky-item {
+        position: sticky;
+        top: calc(0% + 2vh);
+    }
+}
+
+.any-question {
+    font-size: 0.85rem;
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+}

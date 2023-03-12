@@ -1,0 +1,48 @@
+/**/
+.todo-list {
+    padding: 0;
+    margin: 0;
+    
+    flex-direction: column;
+
+    li {
+        list-style: none;
+        font-size: .9375rem;
+        font-weight: 500;
+        padding: 1rem 0;
+        border-bottom: 1px solid $border-color;
+        display: flex;
+        justify-content: space-between;
+
+        .form-check {
+            max-width: 75%;
+            margin-top: .25rem;
+            margin-bottom: .25rem;
+            padding-#{$start-direction}: 0;
+
+            .checkbox {
+                margin: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 100%;
+                white-space: nowrap;
+            }
+        }
+
+        .remove {
+            cursor: pointer;
+            text-align: center;
+        }
+
+        &.completed {
+            color: currentColor;
+
+            .checkbox {
+                text-decoration: line-through;
+                text-decoration-color: currentcolor;
+     
+
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.tea-widget {
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    /*height: 100%;*/
+    flex-direction: column;
+    .tea-widget__content {
+        position: absolute;
+        z-index: 2;
+        padding: 1rem;
+        @include media-breakpoint-down(md) {
+            padding: .75rem .875rem;
+        }
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        h2 {
+            font-weight: 400;
+            font-size: calc(112.5% + 1vw);
+            padding: 0;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+        h3 {
+            font-size: 1rem;
+            line-height: 1;
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        h4 {
+            font-size: 1rem;
+            letter-spacing: 1px;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            padding: 0;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+        &.deals__content {
+            background: rgba(255, 255, 255, 0.9);
+        }
+    }
+    .tea-widget__link {
+        @extend .product__img;
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        padding-bottom: 133%;
+        //aspect-ratio: 3/ 4;            
+        //object-fit: contain;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        &:before {
+            color: #dadada;
+            content: "";
+            background: url(../media/loading.gif) no-repeat center;
+            background-size: 100%;
+            font-size: 100px;
+            height: 20px;
+            left: calc(50% - 10px);
+            line-height: 46px;
+            margin: 0;
+            position: absolute;
+            text-align: center;
+            top: calc(50% - 10px);
+            width: 20px;
+        }
+        img {
+            transition: all 0.35s ease 0s;
+            -webkit-transition: all 0.35s ease 0s;
+            width: 100%;
+            max-width: 100%;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    &:hover {
+        .tea-widget__link {
+            img {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+            }
+        }
+    }
+}

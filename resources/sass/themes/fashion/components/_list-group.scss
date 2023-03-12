@@ -1,0 +1,62 @@
+.list-group-item {
+    background: transparent;
+    border: $border;
+    &.disabled, :disabled{
+    background: transparent;
+    }
+}
+
+.list-group-xl {
+    .list-group-item {
+        padding: 2.25rem 225rem;
+    }
+}
+
+.list-group-lg {
+    .list-group-item {
+        padding: 2rem 2rem;
+    }
+}
+
+.list-group-md {
+    .list-group-item {
+        padding: 1.5rem 1.5rem;
+    }
+}
+
+.list-group-sm {
+    .list-group-item {
+        padding: 1.25rem 1.25rem
+    }
+}
+
+.list-group-xs {
+    .list-group-item {
+        padding: 1rem 1rem
+    }
+}
+
+.list-group-flush-x {
+    .list-group-item {
+        padding-#{$start-direction}: 0;
+        padding-#{$end-direction}: 0;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+}
+
+.list-group-flush-y {
+    .list-group-item {
+        &:first-child {
+            padding-top: 0;
+            border-top: none;
+            border-radius: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+            border-radius: 0;
+        }
+    }
+}

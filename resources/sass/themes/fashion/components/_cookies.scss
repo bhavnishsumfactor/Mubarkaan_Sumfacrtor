@@ -1,0 +1,24 @@
+.cookies {
+    text-align: center;
+    &_img {
+        max-width: 100px;
+        margin: 1rem auto;
+    }
+    .modal-title {
+        margin-top: 1.5rem;
+    }
+    p {
+        font-size: 0.8rem;
+        color: $txt-gray;
+    }
+    &_actions {
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 200px;
+        .btn-link {
+            font-size: 0.8rem;
+        }
+    }
+}

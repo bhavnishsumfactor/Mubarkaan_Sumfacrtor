@@ -1,0 +1,13 @@
+{
+    "name": "YoKartShipping/SystemShipping",
+    "description": "This package contains all files related to shipping calcuate.",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "Mayank Bindra",
+            "email": "mayank.bindra@fatbit.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

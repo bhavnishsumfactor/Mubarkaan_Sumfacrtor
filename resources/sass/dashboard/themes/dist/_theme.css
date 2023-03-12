@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800|Poppins:300,400,400i,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,600i,700,800&display=swap");
+:root {
+  --brand-color: hsl(4deg 85% 55%);
+  --brand-color-inverse: #FFFFFF;
+  --bg-gray: #f4f5fa;
+  --bg-white: #fff;
+  --bg-white-inverse: #000;
+  --border-color: #e2e5ec;
+  --txt-gray: #888;
+}
+
+[data-theme=dark] a {
+  color: rgba(255, 255, 255, 0.8);
+}
+[data-theme=dark] a:hover {
+  color: currentColor;
+}
+[data-theme=dark] body {
+  background: #121212;
+  color: rgba(255, 255, 255, 0.8);
+}
+[data-theme=dark] body p,
+[data-theme=dark] body h2,
+[data-theme=dark] body h3,
+[data-theme=dark] body h4,
+[data-theme=dark] body h5,
+[data-theme=dark] body h6,
+[data-theme=dark] body table,
+[data-theme=dark] body .dropdown-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+[data-theme=dark] body .bg-dashboard {
+  background-color: #121212;
+}
+[data-theme=dark] body .account-area {
+  background: #262626;
+}
+[data-theme=dark] body .messages-detail .chat__editor .emoji-picker-icon {
+  filter: invert(0.6);
+}
+[data-theme=dark] body .form input:disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+[data-theme=dark] body .form input,
+[data-theme=dark] body .form select,
+[data-theme=dark] body .logout {
+  color: rgba(255, 255, 255, 0.6);
+}
+[data-theme=dark] body .dropdown-divider {
+  border-color: var(--border-color);
+}
+[data-theme=dark] body .orders-body svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+[data-theme=dark]:root {
+  --bg-gray: #383838;
+  --bg-white: #383838;
+  --bg-white-inverse: #fff;
+  --border-color: #3d3d3d;
+  --txt-gray: rgba(255, 255, 255, 0.6);
+}

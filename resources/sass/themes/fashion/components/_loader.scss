@@ -1,0 +1,72 @@
+.page-loader {
+    display: none;
+}
+
+.loading {
+    overflow: hidden;
+    .page-loader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .preloader {
+            color: #000;
+            margin: 5px 0;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            .line {
+                width: 1px;
+                height: 12px;
+                background: #000;
+                margin: 0 1px;
+                display: inline-block;
+                animation: opacity-2 1000ms infinite ease-in-out;
+                &.line-1 {
+                    animation-delay: 800ms;
+                }
+                &.line-2 {
+                    animation-delay: 600ms;
+                }
+                &.line-3 {
+                    animation-delay: 400ms;
+                }
+                & .line-4 {
+                    animation-delay: 200ms;
+                }
+                &.line-6 {
+                    animation-delay: 200ms;
+                }
+                &.line-7 {
+                    animation-delay: 400ms;
+                }
+                & .line-8 {
+                    animation-delay: 600ms;
+                }
+                & .line-9 {
+                    animation-delay: 800ms;
+                }
+            }
+        }
+    }
+}
+
+@keyframes opacity-2 {
+    0% {
+        opacity: 1;
+        height: 15px;
+    }
+    50% {
+        opacity: 0;
+        height: 12px;
+    }
+    100% {
+        opacity: 1;
+        height: 15px;
+    }
+}

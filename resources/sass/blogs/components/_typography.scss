@@ -1,0 +1,228 @@
+/* #Typography
+================================================== */
+
+
+/* Headings & paragraphs -- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: 300;
+    text-transform: none;
+    padding: 0 0 5px 0;
+    margin: 0;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+}
+
+h1 {
+    font-size: calc(112.5% + 2vw);
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: calc(112.5% + 0.6vw);
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: calc(112.5% + 0.55vw);
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: calc(112.5% + 0.44vw);
+    line-height: 1.5;
+}
+
+h4 strong {
+    font-weight: 400;
+}
+
+h5 {
+    font-size: calc(112.5% + 0.20vw);
+    line-height: 1.59;
+    font-weight: 300;
+}
+
+h5 strong {
+    font-weight: 400;
+}
+
+h6 {
+    font-size: calc(112.5% + 0.040vw);
+    line-height: 1.5;
+}
+
+.heading-xxxs {
+    font-size: .6875rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    text-transform: uppercase
+}
+
+.heading-xxs {
+    font-size: .8125rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    text-transform: uppercase
+}
+
+strong {
+    font-weight: 600;
+}
+
+.font-size-lg {
+    font-size: 1.125rem !important
+}
+
+.font-size-base {
+    font-size: 1rem !important
+}
+
+.font-size-sm {
+    font-size: .9375rem !important;
+}
+
+.font-size-xs {
+    font-size: .875rem !important
+}
+
+.font-size-xxs {
+    font-size: .8125rem !important
+}
+
+.font-size-xxxs {
+    font-size: .6875rem !important
+}
+
+.font-size-h1 {
+    font-size: 2.75rem !important
+}
+
+.font-size-h2 {
+    font-size: 2.25rem !important
+}
+
+.font-size-h3 {
+    font-size: 2rem !important
+}
+
+.font-size-h4 {
+    font-size: 1.75rem !important
+}
+
+.font-size-h5 {
+    font-size: 1.5rem !important
+}
+
+.font-size-h6 {
+    font-size: 1.25rem !important
+}
+
+@media (max-width:767.98px) {
+    .font-size-h1 {
+        font-size: 2.25rem !important
+    }
+    .font-size-h2 {
+        font-size: 1.875rem !important
+    }
+    .font-size-h3 {
+        font-size: 1.75rem !important
+    }
+    .font-size-h4 {
+        font-size: 1.5rem !important
+    }
+    .font-size-h5 {
+        font-size: 1.375rem !important
+    }
+}
+
+.weight-300 {
+    font-weight: 300;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-500 {
+    font-weight: 500;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.weight-700 {
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+    line-height: 1.59;
+    font-weight: 300;
+}
+
+p.p-sm {
+    font-size: 1rem !important;
+}
+
+p.p-lg {
+    font-size: calc(112.5% + 0.29vw) !important;
+}
+
+p img {
+    margin: 0;
+}
+
+p.lead {
+    font-size: 21px;
+    color: #777;
+}
+
+a {
+    color: inherit;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+p {
+    color: inherit;
+}
+
+p a {
+    color: $body-color;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+em {
+    font-style: italic;
+}
+
+small {
+    font-size: 80%;
+}

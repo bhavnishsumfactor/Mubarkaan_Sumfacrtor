@@ -1,0 +1,79 @@
+$sl-vue:'sl-vue-tree';
+.#{$sl-vue} {
+    $self: &;
+    border: none;
+    background-color: transparent;
+    color: $txt-gray;
+    border-radius: 3px;
+    position: relative;
+    cursor: default;
+    user-select: none;
+    width: 100%;
+    &-root {
+        background-color: transparent!important;
+        border: 0!important;
+        color: currentColor !important;
+    }
+    #{$self}-node {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        flex-wrap: wrap;
+        grid-gap: 0.25rem;
+        #{$self}-node-item {
+            padding: 0.75rem;
+            border-radius: 4px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: normal;
+            color: currentColor;
+            &:hover {
+                color: $brand-color;
+                cursor: pointer;
+            }
+            #{$self}-toggle {
+                display: inline-flex;
+                width: 22px;
+                height: 22px;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+                font-size: 16px;
+                position: absolute;
+                #{$end-direction}: 0;
+            }
+            #{$self}-gap {
+                display: none;
+            }
+            .item-icon {
+                margin-#{$end-direction}: 0.5rem;
+            }
+        }
+        #{$self} {
+            margin-#{$start-direction}: 1.25rem;
+            #{$self}-node-item {
+                font-size: 1rem;
+            }
+        }
+    }
+    #{$self}-selected {
+        >#{$self}-node-item {
+            color: $brand-color;
+            transition: color 0.3s ease;
+            background: $bg-gray;
+        }
+    }
+}
+
+.resource-nav {
+    $self: &;
+    position: sticky;
+    top: 100px;
+    &_inner {
+        max-height: 740px;
+    }
+}

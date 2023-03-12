@@ -1,0 +1,49 @@
+.collection-deals {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    &_data {
+        ul {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            li {
+                position: relative;
+                text-align: center;
+                display: flex;
+                .value {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 2.75rem;
+                    @include media-breakpoint-down(sm) {
+                        font-size: 1.5rem;
+                    }
+                    line-height: 1;
+                    color: $primary-color;
+                    .label {
+                        display: block;
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                        color: $txt-body;
+                        text-transform: uppercase;
+                    }
+                }
+                &:after {
+                    line-height: 1;
+                    font-weight: 600;
+                    margin: 0 1rem;
+                    font-size: 2rem;
+                    content: ":";
+                    color: $primary-color;
+                }
+                &:last-child {
+                    &:after {
+                        content: normal;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    @include media-breakpoint-down(sm) {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+    li {
+        a {
+            background-color: rgba(0, 0, 0, 0);
+            border: solid 1px transparent;
+            border-radius: 40px;
+            display: block;
+            padding: 7px 25px;
+            transition: all 0.2s ease 0s;
+            color: $txt-body;
+            margin: 0 2px;
+            @include media-breakpoint-down(sm) {
+                border-width: 1px;
+                padding: 4px 10px;
+                white-space: nowrap;
+                font-size: 0.9rem;
+            }
+        }
+        &.active {
+            a {
+                //border-color: $brand-color;
+                color: $brand-color-inverse;
+                background-color: $brand-color;
+            }
+        }
+    }
+}
+
+.content-data {
+    display: none;
+    &.active {
+        display: block;
+    }
+}

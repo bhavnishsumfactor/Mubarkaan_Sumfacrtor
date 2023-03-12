@@ -1,0 +1,34 @@
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    .grid-layout-close {
+        display: none;
+    }
+    .grid-layout-aside {
+        flex-basis: 0;
+        max-width: 100%;
+        flex-grow: 0;
+        @include media-breakpoint-down(sm) {
+            flex-basis: 100%;
+        }
+        .portlet {
+            width: 330px;
+            @include media-breakpoint-down(lg) {
+                width: 280px;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+    }
+    .grid-layout-content {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        margin-#{$start-direction}: 2rem;
+        @include media-breakpoint-down(sm) {
+            flex-basis: 100%;
+            margin-#{$start-direction}: 0;
+        }
+    }
+}

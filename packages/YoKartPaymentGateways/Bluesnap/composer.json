@@ -1,0 +1,13 @@
+{
+"name": "YoKartPaymentGateways/Bluesnap",
+"description": "This package contains all type of payment.",
+"type": "composer-plugin",
+"authors": [
+    {
+        "name": "Vivek Maurya",
+        "email": "vivek.kumar@fatbit.in"
+    }
+],
+"minimum-stability": "dev",
+"require": {}
+}

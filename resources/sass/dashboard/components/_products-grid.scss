@@ -1,0 +1,180 @@
+/*3D product*/
+
+@-webkit-keyframes slideRight {
+    0% {
+        opacity: 0;
+        #{$start-direction}: 30px;
+    }
+    100% {
+        opacity: 1;
+        #{$start-direction}: 0;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        #{$start-direction}: 30px;
+    }
+    100% {
+        opacity: 1;
+        #{$start-direction}: 0;
+    }
+}
+
+.no-stock-wrap {
+    opacity: 0.5 !important;
+    .no-stock {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background-color: $brand-color;
+        color: $brand-color-inverse;
+        border-radius: 50%;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+}
+
+.collection-favourites {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    @include media-breakpoint-down(sm) {
+        grid-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .favourite {
+        //outline: $border;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        transition: transform 5s;
+        transition: width 500ms ease-in-out;
+        animation: slideRight 600ms ease both;
+        display: flex;
+        flex-direction: column;
+        &_body {
+            position: relative;
+            overflow: hidden;
+        }
+        &_foot {
+            text-align: center;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        &_actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: auto;
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            #{$end-direction}: 10px;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            transform: translate(30px, 0px);
+            .btn {
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+                background-color: $bg-white;
+                border-radius: 50%;
+                border: none;
+                margin: 4px 2px;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &.active {
+                    color: $brand-color !important;
+                    .svg {
+                        fill: currentColor;
+                    }
+                }
+                .svg {
+                    width: 18px;
+                    height: 18px;
+                    fill: $txt-gray;
+                }
+            }
+        }
+        &_img {
+            background-color:#f4f5fa;
+            &[data-ratio="3:4"] {
+                padding-bottom: 133%;
+                //aspect-ratio: 3/ 4;            
+                //object-fit: contain;
+            }
+            &[data-ratio="16:9"] {
+                padding-bottom: 56%;
+                //aspect-ratio: 16/ 9;            
+                //object-fit: contain;
+            }
+            &[data-ratio="1:1"] {
+                padding-bottom: 100%;
+                //aspect-ratio: 1/ 1;            
+                //object-fit: contain;
+            }
+            img {
+                mix-blend-mode: multiply;
+                max-width: 100%;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        &_name {
+            font-weight: 500;
+            color: $txt-body;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &_category {
+            font-size: 0.7rem;
+            color: $txt-gray;
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &_price {
+            margin-top: 0.5rem;
+            &_new {
+                color: $brand-color;
+                font-weight: 500;
+                font-size: 0.8rem;
+            }
+            &_old {
+                font-weight: 300;
+            }
+        }
+        &:hover {
+            .favourite_actions {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0px, 0px);
+                .btn {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

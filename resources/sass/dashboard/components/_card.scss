@@ -1,0 +1,69 @@
+.card {
+    border: $border;
+    background: $bg-white;
+    color: $bg-white-inverse;
+    &-header {
+        background: none;
+        border: none;
+        h6 {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        p {
+            color: $txt-gray;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.card {
+    margin-bottom: 30px;
+    border-radius: $radius4;
+    transition: all 0.3s ease-in-out;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 25px 0 25px;
+    }
+    &__title {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    &__section {
+        padding: 20px 25px;
+    }
+}
+.skeleton-cards{
+    background-color: #f5f5f5!important;
+    .payment-card__photo{
+        .svg{
+            border-radius: $radius4;
+
+        }
+    }
+    .cards-detail{
+        h6 ,p{
+            min-width: 6.5rem;
+            height: 1.25rem;
+            border-radius: $radius4;
+        }
+    }
+}
+.skeleton {
+    background-color: #ececec ;
+    // The shine that's going to move across the skeleton:
+    background-image: linear-gradient(90deg, rgba(#fff, 0), rgba(#fff, 0.5), rgba(#fff, 0)) !important;
+    background-size: 40px 100%; // width of the shine
+    background-repeat: no-repeat; // No need to repeat the shine effect
+    background-position: left -40px top 0; // Place shine on the left side, with offset on the left based on the width of the shine - see background-size
+    animation: shine 1s ease infinite; // increase animation time to see effect in 'slow-mo'
+}
+
+@keyframes shine {
+    to {
+        // Move shine from left to right, with offset on the right based on the width of the shine - see background-size
+        background-position: right -40px top 0;
+    }
+}

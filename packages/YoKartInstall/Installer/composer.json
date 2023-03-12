@@ -1,0 +1,33 @@
+{
+    "name": "YoKartInstall/Installer",
+    "description": "Laravel web installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohit Rawal",
+            "email": "mohit.rawal@fatbit.in"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YoKartInstall\\Installer\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YoKartInstall\\Installer\\Providers\\InstallerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

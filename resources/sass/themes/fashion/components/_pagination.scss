@@ -1,0 +1,78 @@
+.pagination {
+    margin-bottom: 0;
+    font-weight: 500
+}
+
+.pagination-sm {
+    font-size: .9375rem
+}
+
+.pagination .page-link {
+    border-width: 0 0 1px 0
+}
+
+.pagination .page-link-arrow {
+    border-width: 0;
+}
+
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: inherit;
+    background-color: transparent;
+    border: $border;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: $brand-color;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: #e5e5e5
+}
+
+.page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: $brand-color;
+    background-color: transparent;
+    border-color: $txt-body;
+}
+
+.page-item.disabled .page-link {
+    color: #3e3e3e;
+    pointer-events: none;
+    cursor: auto;
+    background-color: $bg-white;
+    border-color: $txt-body;
+}
+
+.pagination-lg .page-link {
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5
+}
+
+.pagination-sm .page-link {
+    padding: .5rem 1rem;
+    font-size: .9375rem;
+    line-height: 1.5
+}

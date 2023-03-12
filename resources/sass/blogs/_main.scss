@@ -1,0 +1,196 @@
+// Custom.scss
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 400;
+    font: inherit;
+    font-family: inherit;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.42857;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+:root {
+    --brand-color: #f13627;
+    --brand-color-inverse: #FFFFFF;
+    --border-color: #dee2e6;
+    --bg-white: #ffffff;
+    --bg-white-inverse: #000;
+    --bg-black: #000;
+    --bg-black-inverse: #fff;
+    --txt-body: #000;
+    --bg-gray: #f9f9fc;
+}
+
+[data-theme="dark"] {
+    body {
+        background: #121212;
+        color: rgba(255, 255, 255, 0.8);
+        p,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        table,
+        .dropdown-item {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .bg-gray {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+    &:root {
+        --bg-gray: rgba(255, 255, 255, 0.12);
+        --bg-white: #121212;
+        --bg-white-inverse: #fff;
+        --bg-black: #fff;
+        --bg-black-inverse: #000;
+        --border-color: rgba(255, 255, 255, 0.1);
+        --txt-body: #fff;
+    }
+}
+
+$brand-color: var(--brand-color);
+$brand-color-inverse: var(--brand-color-inverse);
+$input-placeholder-color:rgba(0, 0, 0, 0.4);
+//Colors
+$blue:#ff3ca6;
+$primary-color: #ff3ca6;
+$primary-color-inverse: #ffffff;
+$secondary-color: #02cccd;
+$secondary-color-inverse: #ffffff;
+$dark-color: #282a3c;
+$dark-color-inverse: #fff;
+$light-color: #ffffff;
+$light-color-inverse: #888888;
+$txt-body:var(--txt-body);
+$gray-color-inverse: #f6f6f8;
+$txt-gray: #888;
+//bg
+$bg-white: var(--bg-white);
+$bg-white-inverse:var(--bg-white-inverse);
+$bg-black:var(--bg-black);
+$bg-black-inverse:var(--bg-black-inverse);
+$bg-gray:var(--bg-gray);
+//Borders
+$border-color:var(--border-color);
+$border-dark-color: #e2e5ec;
+$border-light-color: #e2e5ec;
+$border-color-white: #ffffff;
+$border:solid 1px $border-color;
+//Radius
+$radius4:4px;
+$radius3:3px;
+$radius2:2px;
+$radius1:1px;
+// font family
+$font-family1:'Open Sans';
+$font-family2:'Poppins';
+$font-family3:'Mulish';
+$font-family4:'Poppins';
+//Alerts
+$danger-color: #fd397a;
+$warning-color: #ffb822;
+$info-color: #5578eb;
+$success-color: #1dc9b7;
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import "components/typography";
+@import "components/forms";
+@import "components/radio";
+@import "components/buttons";
+@import "components/pagination";
+@import "components/no-data";
+@import "components/sticky-head-demo";
+@import "page/blog-fashion";
+@import "vendor/slick";
+@import "vendor/fontawesome";

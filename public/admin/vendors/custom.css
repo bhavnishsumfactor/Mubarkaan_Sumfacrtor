@@ -1,0 +1,119 @@
+#originalImage {
+    display: none;
+}
+
+#manage-tax td.disabled {
+    pointer-events: none;
+    /* for "disabled" effect */
+    opacity: 0.5;
+    background: #CCC;
+}
+
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.6;
+    /* background: #CCC; */
+}
+
+.list-group-item-sticky {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+}
+
+.img-disclaimer.editor {
+    font-size: 0.80rem;
+    padding: 0.5rem 0;
+}
+
+
+/* .gjs-block-label span{font-size: 12px;} */
+
+textarea {
+    resize: none;
+}
+
+.shipping-products i.icn-flag {
+    display: inline-block;
+    margin-right: 10px;
+    border: solid 1px var(--border-color);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.shipping-products i.icn-flag img {
+    display: inline-block;
+}
+
+.list-uploads .list-media li img {
+    width: auto;
+}
+
+.portlet__body .business-hours-container .day {
+    width: 44% !important;
+}
+
+ul.tagify-custom.my-2 li.active {
+    background-color: #fa5661;
+    border: 0;
+}
+
+ul.tagify-custom.my-2 li.active a {
+    color: #FFFF;
+}
+
+ul.tagify-custom.my-2 li.active .remove {
+    color: #FFFF;
+}
+
+.YK-logoSystemSettings .dropzone {
+    background: #f3f3f3;
+}
+
+.gjs-pn-panel {
+    padding: 5px 0 0 0;
+}
+
+.gjs-pn-btn.gjs-pn-active {
+    background-color: unset;
+    box-shadow: unset;
+}
+
+#cropper-body .image-wrapper {
+    max-height: 400px;
+}
+
+.combotree-wrapper .comboTreeDropDownContainer {
+    position: relative;
+}
+.editorloading:before{ content:'';
+    position: absolute;
+    left: 0px;
+    top: 0px;    
+    width: 100%;
+    height: 100%;
+    z-index:10;
+    background: rgba(0, 0, 0, 0.8);
+    }
+.editorloading:after{content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 30px;
+    height: 30px;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transpanent;
+    animation: loading1 1s ease infinite;
+    z-index: 100;transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;}
+
+    @keyframes loading1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }

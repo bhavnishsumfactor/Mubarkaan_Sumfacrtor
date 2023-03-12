@@ -1,0 +1,105 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $this->call([
+            UserRewardPointBreakupTableSeeder::class,
+            UserRewardPointTableSeeder::class,
+            UserCardTableSeeder::class,
+            UserAddressTableSeeder::class,
+            UserTableSeeder::class,
+            UrlRewriteTableSeeder::class,
+            OrderReturnAmountTableSeeder::class,
+            OrderAdditionInfoTableSeeder::class,
+            OrderReturnRequestTableSeeder::class,
+            TransactionTableSeeder::class,
+            TaxTableSeeder::class,
+            StoreTimingTableSeeder::class,
+            StoreAddressTableSeeder::class,
+            SpecialPriceIncludeTableSeeder::class,
+            SpecialPriceTableSeeder::class,
+            ShippingToLocationTableSeeder::class,
+            ShippingRateTableSeeder::class,
+            ShippingProfileZoneTableSeeder::class,
+            ShippingProfileToProductTableSeeder::class,
+            ShippingTableSeeder::class,
+            TestimonialTableSeeder::class,
+            ReasonTableSeeder::class,
+            ProductReviewHelpfulTableSeeder::class,
+            ProductReviewTableSeeder::class,
+            OrderProductTaxLogTableSeeder::class,
+            OrderProductChargeTableSeeder::class,
+            OrderProductAdditionInfoTableSeeder::class,
+            OrderMessageTableSeeder::class,
+            OrderProductTableSeeder::class,
+            OrderAddressTableSeeder::class,
+            AdminTableSeeder::class,
+            AttachedTableSeeder::class,
+            BlogPostCategoryTableSeeder::class,
+            BlogPostCommentTableSeeder::class,
+            BlogPostContentTableSeeder::class,
+            BlogPostTableSeeder::class,
+            BlogPostToCategoryTableSeeder::class,
+            BlogPostToCommentTableSeeder::class,
+            BlogReplyToCommentTableSeeder::class,
+            BrandTableSeeder::class,
+            BuyTogetherProductTableSeeder::class,
+            ConfigurationTableSeeder::class,
+            CountriesTableSeeder::class,
+            CurrencyTableSeeder::class,
+            DiscountCouponRecordTableSeeder::class,
+            DiscountCouponTableSeeder::class,
+            EmailTemplateTableSeeder::class,
+            SmsTemplateTableSeeder::class,
+            NotificationTemplateTableSeeder::class,
+            LanguageTableSeeder::class,
+            OptionTableSeeder::class,
+            OptionToVarientSeeder::class,
+            TodoTableSeeder::class,
+            OrderInvoiceTableSeeder::class,
+            OrderTableSeeder::class,
+            PackageTableSeeder::class,
+            PageTableSeeder::class,
+            HomePageTableSeeder::class,
+            AboutPageTableSeeder::class,
+            PrivacyPageTableSeeder::class,
+            TermsPageTableSeeder::class,
+            ContactPageTableSeeder::class,
+            ProductCategoryTableSeeder::class,
+            ProductContentTableSeeder::class,
+            ProductOptionNameTableSeeder::class,
+            ProductOptionTableSeeder::class,
+            ProductOptionVarientTableSeeder::class,
+            AppCollectionRecordToDataTableSeeder::class,
+            ProductSpecificationTableSeeder::class,
+            ProductTableSeeder::class,
+            ProductToCategoryTableSeeder::class,
+            RegionsTableSeeder::class,
+            RelatedProductTableSeeder::class,
+            StatesTableSeeder::class,
+            ShareEarnRecordTableSeeder::class,
+            ThreadMessageTableSeeder::class,
+            ThreadTableSeeder::class,
+            UserSavedProductTableSeeder::class,
+            AppNotificationTemplatesTableSeeder::class,
+            UserFavouriteProductTableSeeder::class,
+            InstagramFeedTokenTableSeeder::class,
+            NotificationToAdminTableSeeder::class,
+            ResourceTableSeeder::class,
+            AppCollectionsTableSeeder::class,
+            AppPagesTableSeeder::class,
+            
+        ]);
+    }
+}

@@ -1,0 +1,52 @@
+.link {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+    color: $brand-color;
+    transition: all .17s ease-out;
+    user-select: none;
+    background: none;
+    border: none;
+    height: auto !important;
+    //padding: 5px 0 !important;
+    line-height: inherit;
+    &:after,
+    &:before {
+        width: 100%;
+        height: 1px;
+        content: "";
+        position: absolute;
+        overflow: hidden;
+        bottom: 0px;
+        left: 0;
+        background-color: currentColor;
+        transition: transform .4s cubic-bezier(.93, .01, 0, .98),
+    }
+    &:before {
+        transition-delay: 0s;
+        transform: translateX(-100%)
+    }
+    &:after {
+        transition-delay: .25s
+    }
+    &:hover {
+        color: $txt-body;
+        box-shadow: none !important;
+        &:after,
+        &:before {
+            background-color: $txt-body;
+        }
+        &:before {
+            transition-delay: .25s;
+            transform: translateX(0)
+        }
+        &:after {
+            transition-delay: 0s;
+            transform: translateX(100%)
+        }
+    }
+}

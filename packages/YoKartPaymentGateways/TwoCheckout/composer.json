@@ -1,0 +1,12 @@
+"name": "YoKartPaymentGateways/TwoCheckout",
+"description": "This package contains all type of payment.",
+"type": "composer-plugin",
+"authors": [
+    {
+        "name": "Vivek",
+        "email": "vivek.kumar@fatbit.in"
+    }
+],
+"minimum-stability": "dev",
+"require": {}
+}

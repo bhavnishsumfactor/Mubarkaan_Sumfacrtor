@@ -1,0 +1,19 @@
+.comment-list-wrapper{
+    background-color: red;
+    .list-comments{
+        .comment{
+            .comment-head{ 
+                .avatar{
+                    max-width: 70px;
+                    max-height: 70px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;  
+                }
+            }
+        }
+    }
+}
+

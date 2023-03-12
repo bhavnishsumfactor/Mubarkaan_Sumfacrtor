@@ -1,0 +1,21 @@
+.vc-chrome {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 9;
+    width: 100% !important;
+    margin-top: 10px;
+
+    &-saturation-wrap {
+        padding-bottom: 30% !important;
+    }
+}
+
+.current-color {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    cursor: pointer;
+
+}

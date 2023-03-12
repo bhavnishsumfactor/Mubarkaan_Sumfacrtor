@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="904" viewBox="0 0 1100 904">
+  <defs>
+    <linearGradient id="linearGradient-1" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECEFF5"/>
+      <stop offset="100%" stop-color="#f5f6f9"/>
+    </linearGradient>
+    <linearGradient id="linearGradient-2" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECEFF5"/>
+      <stop offset="100%" stop-color="#f5f6f9"/>
+    </linearGradient>
+  </defs>
+  <g id="new" fill="none" fill-rule="evenodd">
+    <g id="Artboard" transform="translate(-340 4)">
+      <g id="Снимок-экрана-2018-07-10-в-4.13.37" transform="translate(340 -4)">
+        <g id="Group-13">
+          <g id="Oval-3" transform="translate(0 3)">
+            <path fill="url(#linearGradient-1)" d="M641,940 C833.747378,940 1442.40396,695.710044 1089.8384,599.861711 C737.272839,504.013379 708.517141,162 515.769763,162 C323.022385,162 292,374.192209 292,575.5 C292,776.807791 448.252622,940 641,940 Z" transform="matrix(-1 0 0 1 1489.642 0)"/>
+            <path fill="url(#linearGradient-2)" d="M245,940 C437.747378,940 1046.40396,695.710044 693.838398,599.861711 C341.272839,504.013379 312.517141,162 119.769763,162 C-72.9776147,162 -104,374.192209 -104,575.5 C-104,776.807791 52.2526223,940 245,940 Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    position: fixed;
+    z-index: -1;
+    background: $brand-color;
+    [data-theme="dark"] & {
+        background: #121212!important;
+    }
+}
+
+.is-login #particles-js {
+    height: 100%;
+    background: $brand-color;
+
+}

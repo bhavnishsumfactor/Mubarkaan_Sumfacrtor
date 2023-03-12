@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800');
+$spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge((0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 2), 6: ($spacer * 2.5), 7: ($spacer * 3), 8: ($spacer * 3.5), 9: ($spacer * 4), 10: ($spacer * 4.5), 11: ($spacer * 5), 12: ($spacer * 5.5), 13: ($spacer * 6), 14: ($spacer * 6.5), 15: ($spacer * 7), 16: ($spacer * 7.5), 17: ($spacer * 8), 18: ($spacer * 8.5), 19: ($spacer * 9), 20: ($spacer * 9.5), ),
+$spacers);
+:root {
+    --brand-color: #f13627;
+    --brand-color-inverse: #FFFFFF;
+}
+
+$brand-color: var(--brand-color);
+$brand-color-inverse: var(--brand-color-inverse);
+$input-placeholder-color:rgba(0,
+0,
+0,
+0.4);
+//Colors
+$blue:#ff3ca6;
+$primary-color: #ff3ca6;
+$primary-color-inverse: #ffffff;
+$secondary-color: #02cccd;
+$secondary-color-inverse: #ffffff;
+$dark-color: #282a3c;
+$dark-color-inverse: #fff;
+$light-color: #ffffff;
+$light-color-inverse: #888888;
+$bg-white: #ffffff;
+$bg-white-inverse: #000000;
+$bg-gray:#f9f9fc;
+$body-color:#212529;
+$gray-color: #8c8c8c;
+$gray-color-inverse: #f6f6f8;
+$txt-gray: #ababab;
+//Borders
+$border-color:#dee2e6;
+$border-dark-color: #e2e5ec;
+$border-light-color: #e2e5ec;
+$border-color-white: #ffffff;
+$border:solid 1px $border-color;
+//Radius
+$radius4:4px;
+$radius3:3px;
+$radius2:2px;
+$radius1:1px;
+// font family
+$font-family1:'Open Sans';
+$font-family2:'Poppins';
+$font-family3:'Mulish';
+$font-family4:'Poppins';
+//Alerts
+$danger-color: #fd397a;
+$warning-color: #ffb822;
+$info-color: #5578eb;
+$success-color: #1dc9b7;
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import "components/modal";
+@import "components/forms";
+@import "components/radio";
+@import "components/buttons";
+@import "components/install";
+@import "components/tick-animation";
+@import "components/colorpicker";
+@import "components/dropzone";
+@import "vendor/fontawesome";
+@import "vendor/flaticon";
+@import "vendor/flaticon2";

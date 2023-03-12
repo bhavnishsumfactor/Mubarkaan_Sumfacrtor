@@ -1,0 +1,121 @@
+.page-loader {
+    display: none;
+}
+
+.loading {
+    overflow: hidden;
+    .page-loader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .preloader {
+            color: #000;
+            margin: 5px 0;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            .line {
+                width: 1px;
+                height: 12px;
+                background: #000;
+                margin: 0 1px;
+                display: inline-block;
+                animation: opacity-2 1000ms infinite ease-in-out;
+                &.line-1 {
+                    animation-delay: 800ms;
+                }
+                &.line-2 {
+                    animation-delay: 600ms;
+                }
+                &.line-3 {
+                    animation-delay: 400ms;
+                }
+                & .line-4 {
+                    animation-delay: 200ms;
+                }
+                &.line-6 {
+                    animation-delay: 200ms;
+                }
+                &.line-7 {
+                    animation-delay: 400ms;
+                }
+                & .line-8 {
+                    animation-delay: 600ms;
+                }
+                & .line-9 {
+                    animation-delay: 800ms;
+                }
+            }
+        }
+    }
+}
+
+@keyframes opacity-2 {
+    0% {
+        opacity: 1;
+        height: 15px;
+    }
+    50% {
+        opacity: 0;
+        height: 12px;
+    }
+    100% {
+        opacity: 1;
+        height: 15px;
+    }
+}
+
+.load-more {
+    position: relative;
+}
+
+.load-dots {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.load-dot {
+    margin: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $brand-color;
+    transform: scale(0.5);
+    animation: scale-dot 1.2s ease-out infinite;
+    &:nth-of-type(2) {
+        animation-delay: 0.2s;
+    }
+    &:nth-of-type(3) {
+        animation-delay: 0.3s;
+    }
+    &:nth-of-type(4) {
+        animation-delay: 0.4s;
+    }
+    &:nth-of-type(5) {
+        animation-delay: 0.5s;
+    }
+}
+
+@keyframes scale-dot {
+    0% {
+        transform: scale(0.5);
+    }
+    25% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(0.5);
+    }
+}

@@ -1,0 +1,243 @@
+    .timeline-orders {
+        margin: 2rem 0;
+    }
+
+    .timeline-comments {
+        display: flex;
+
+        .timeline-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: $brand-color;
+            color: $brand-color-inverse;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-#{$end-direction}: 1rem;
+            box-shadow: $shadow1;
+            overflow: hidden;
+
+            .timeline-avatar-initials {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .timeline-comments-box {
+            flex: 1;
+
+            .input-group {
+                .form-control {
+                    @include media-breakpoint-down(sm) {
+                        flex: 1;
+                        margin-bottom: .875rem;
+                        max-width: 100%
+                    }
+                }
+
+                .input-group-append {
+                    >.btn {
+                        @include media-breakpoint-down(sm) {
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Timeline */
+
+    .timelines-wrap {
+        max-height: 400px;
+        overflow-y: auto;
+        margin: 1rem 0;
+
+        .timeline {
+            color: rgba(0, 0, 0, 0.8);
+            margin: 30px auto;
+            position: relative;
+            line-height: 1.4em;
+            font-size: 0.8rem;
+            padding: 0 2rem;
+            list-style: none;
+
+            @include media-breakpoint-down(sm) {
+                margin-#{$start-direction}: 15px;
+                padding: 0 20px;
+            }
+
+            &__date {
+                color: $txt-gray;
+                font-size: 0.75rem;
+                margin-bottom: 0.25rem;
+                display: block;
+                flex: 0 0 30%;
+                max-width: 30%;
+                margin-#{$end-direction}: 63px;
+                text-align: #{$end-direction};
+                max-width: 94px;
+            }
+
+            .data {
+                //border: $border;
+                border-radius: 5px;
+                padding: 10px;
+                background: $bg-gray;
+                //box-shadow: $shadow1;
+            }
+
+            .dropdown-toggle {
+                font-weight: 600;
+                white-space: normal;
+                padding-left: 25px;
+                padding-right: 0;
+                display: flex;
+
+                &:after {
+                    left: 5px;
+                    right: auto;
+                }
+
+                //color: $txt-gray;
+                @include media-breakpoint-down(sm) {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: inline-block;
+                    max-width: 100%;
+
+                    &:after {
+                        #{$end-direction}: 2px;
+                    }
+                }
+
+                .svg {
+                    width: 14px;
+                    height: 14px;
+                    fill: currentColor;
+                }
+            }
+
+            .event {
+                padding-bottom: 2rem;
+                position: relative;
+                color: $txt-gray;
+                display: flex;
+                flex-wrap: initial;
+
+
+                &:last-of-type {
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+
+                &:before,
+                &:after {
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                }
+
+                &:before {
+                    content: "";
+                    background-color: $border-color;
+                    width: 2px;
+                    position: absolute;
+                    //left: -1.5rem;
+                    #{$start-direction}: 129px;
+                    top: 4px;
+                    bottom: -4px;
+                }
+
+                &:after {
+                    box-shadow: 0 0 0 2px $txt-gray;
+                    //#{$start-direction}: -1.75rem;
+                    #{$start-direction}: 125px;
+                    background: #fff;
+                    border-radius: 50%;
+                    height: 11px;
+                    width: 11px;
+                    content: "";
+                    top: 4px;
+                }
+            }
+
+            .admin {
+                font-weight: 500;
+
+
+                &:after {
+                    box-shadow: 0 0 0 2px $success-color;
+                    //background-color: $brand-color;
+                }
+
+                .data {
+                    background: lighten($success-color, $amount: 50);
+                    color: $success-color;
+                }
+            }
+
+            .default_status {
+                //color: $info-color;
+
+                &:after {
+                    //box-shadow: 0 0 0 2px $info-color;
+                    //background-color: $info-color;
+                }
+            }
+
+            li {
+
+                // &.last-status {
+                //     color: $txt-gray;
+                //     &:after {
+                //         box-shadow: 0 0 0 2px $bg-gray;
+                //         background-color: $bg-gray;
+                //     }
+                //     &:before {
+                //         background-color: $bg-gray;
+                //     }
+                // }
+                &:last-child {
+                    &:before {
+                        display: none;
+                    }
+
+                    &:after {
+                        top: 4px;
+                    }
+                }
+            }
+
+            .timeline_status {
+                font-size: 0.85rem;
+                font-weight: 500;
+                display: block;
+                color: $txt-body;
+                margin-bottom: 0.5rem;
+
+                .svg {
+                    fill: currentColor;
+                    margin-#{$end-direction}: 5px;
+                }
+            }
+        }
+
+        .other-detail {
+            >p {
+                margin-bottom: 10px;
+
+                >span {
+                    display: block;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }

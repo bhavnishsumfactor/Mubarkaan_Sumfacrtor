@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="zs-store-tax" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 64 54" style="enable-background:new 0 0 64 54;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#001684;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#E6EEF9;}
+	.st3{fill:none;stroke:#001684;}
+</style>
+<g>
+	<path class="st0" d="M0,0h64v54H0V0z"/>
+	<path class="st1" d="M20,12l-9.4,12h1.3l9.5-12"/>
+	<path class="st2" d="M23,42h18v4H23V42z"/>
+	<path class="st1" d="M19.9,12.8L26,24h1.3l-6.5-12"/>
+	<g>
+		<path id="store-tax-a" class="st2" d="M9,24h20c0,3.9-3.1,7-7,7h-6C12.1,31,9,27.9,9,24z"/>
+	</g>
+	<path class="st3" d="M9.5,24.5c0.3,3.4,3.1,6,6.5,6h6c3.4,0,6.2-2.6,6.5-6H9.5z"/>
+	<path class="st1" d="M46,17l-9.4,12h1.3l9.5-12"/>
+	<path class="st1" d="M45.9,17.8L52,29h1.3l-6.5-12"/>
+	<g>
+		<path id="store-tax-b" class="st2" d="M35,29h20c0,3.9-3.1,7-7,7h-6C38.1,36,35,32.9,35,29z"/>
+	</g>
+	<path class="st3" d="M35.5,29.5c0.3,3.4,3.1,6,6.5,6h6c3.4,0,6.2-2.6,6.5-6H35.5z"/>
+	<path class="st1" d="M31,14h2v29h-2V14z M24,43h16v3H24V43z M45,45h1v1h-1V45z M20,45h3v1h-3V45z M18,45h1v1h-1V45z M41,45h3v1h-3
+		V45z"/>
+	<g transform="rotate(9 33.083 13.074)">
+		<g>
+			<path id="store-tax-c" class="st2" d="M17.5,11.2l30.7,1.2l0.4,2.5L18,14.3L17.5,11.2z"/>
+		</g>
+		<path class="st3" d="M18.1,11.8l0.3,2.1l29.6,0.6l-0.2-1.5L18.1,11.8L18.1,11.8z"/>
+	</g>
+</g>
+</svg>

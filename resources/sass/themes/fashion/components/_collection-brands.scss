@@ -1,0 +1,40 @@
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    .brand {
+        display: block;
+        padding: 2rem;
+        margin: 0 0.5rem;
+        background-color: #fff;
+        color: #000;
+        // @media screen and (max-width: 500px) {
+        //     flex: 0 0 50%;
+        //     max-width: 50%;
+        //     margin: 0;
+        // }
+        a {
+            display: block;
+            img {
+                min-width: 150px;
+                max-width: 250px;
+                filter: grayscale(50);
+                opacity: 0.5;
+                @media screen and (max-width: 500px) {
+                    min-width: inherit;
+                    max-width: 100%;
+                }
+            }
+            &:hover {
+                img {
+                    filter: none;
+                    opacity: 1;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 1rem;
+        }
+    }
+}

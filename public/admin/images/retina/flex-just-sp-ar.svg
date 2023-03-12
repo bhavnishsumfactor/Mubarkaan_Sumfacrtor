@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.091" height="24" viewBox="0 0 24.091 24">
+	<g transform="translate(-137 -4761)">
+		<g transform="translate(0)">
+			<g transform="translate(159.164 4762)">
+				<path  fill="#fff" d="M11.023,1.927H1.411c-.146,0-.292,0-.439,0A.917.917,0,0,1,0,.943.915.915,0,0,1,.974,0c1.3,0,2.606,0,3.909,0H20.717c.146,0,.293-.006.439,0A.907.907,0,0,1,22,.99a.863.863,0,0,1-.846.927c-1.263.017-2.526.009-3.789.01Z" transform="translate(0 22) rotate(-90)" />
+			</g>
+			<g transform="translate(137 4762)">
+				<path  fill="#fff" d="M11.023,1.927H1.411c-.146,0-.292,0-.439,0A.917.917,0,0,1,0,.943.915.915,0,0,1,.974,0c1.3,0,2.606,0,3.909,0H20.717c.146,0,.293-.006.439,0A.907.907,0,0,1,22,.99a.863.863,0,0,1-.846.927c-1.263.017-2.526.009-3.789.01Z" transform="translate(0 22) rotate(-90)" />
+			</g>
+			<g  fill="none" stroke="#fff"  transform="translate(150.082 4768)">
+				<rect class="a" x="0.5" y="0.5" width="6.01" height="8.588" />
+			</g>
+			<g  fill="none" stroke="#fff"  transform="translate(141 4768)">
+				<rect class="a" x="0.5" y="0.5" width="6.01" height="8.588" />
+			</g>
+		</g>
+	</g>
+</svg>

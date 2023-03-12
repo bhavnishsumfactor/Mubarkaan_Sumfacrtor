@@ -1,0 +1,219 @@
+.profile-card {
+    display: flex;
+    justify-content: center;
+    &__avatar {
+        position: relative;
+        display: inline-block;
+        .user {
+            max-width: 100px;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            }
+        }
+        &img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            box-shadow: $shadow1;
+            img {
+                margin: auto;
+                max-height: 100%;
+            }
+        }
+        .edit {
+            background-color: $bg-white;
+            border-radius: 50%;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            #{$end-direction}: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        }
+    }
+    .actions {
+        a {
+            font-size: 0.75rem;
+            margin-#{$end-direction}: 5px;
+            background: $brand-color;
+            color: $brand-color-inverse;
+            padding: 6px;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            .svg {
+                width: 18px;
+                height: 18px;
+                fill: currentColor;
+            }
+        }
+    }
+}
+
+.gender-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    label {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        align-items: center;
+        cursor: pointer;
+        margin: 0;
+        height: 42px;
+        border: $border;
+        padding: 13px 20px;
+        input {
+            cursor: pointer;
+            opacity: 0;
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute;
+            ~.radio {
+                .sex-icon svg {
+                    fill: currentColor;
+                }
+            }
+            &:checked {
+                color: $brand-color;
+                ~span.sex-icon {
+                    color: $brand-color;
+                }
+            }
+        }
+        &:first-child {
+            border-top-#{$start-direction}-radius: $radius2;
+            border-bottom-#{$start-direction}-radius: $radius2;
+            margin-#{$end-direction}: -1px;
+        }
+        &:last-child {
+            border-top-#{$end-direction}-radius: $radius2;
+            border-bottom-#{$end-direction}-radius: $radius2;
+        }
+    }
+    .sex-icon {
+        font-weight: 500;
+        svg {
+            margin-#{$end-direction}: 8px;
+            fill: currentColor;
+        }
+    }
+}
+
+.account-delete {
+    display: flex;
+    // align-items: flex-start;
+    justify-content: space-between;
+    //grid-gap: 5px;
+    .links {
+        //font-weight: 500;
+        font-size: 0.8rem;
+        background: none;
+        margin-#{$end-direction}: 10px;
+        margin-bottom: 1rem;
+        border: $border;
+        border-radius: $radius3;
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        color: $txt-gray;
+        height: auto;
+        flex: 1;
+        transition: 0.5s all ease;
+        &:last-child {
+            margin-#{$end-direction}: 0;
+        }
+        &:hover {
+            border-color: $brand-color;
+        }
+    }
+}
+
+.field-edit {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    #{$end-direction}: 1rem;
+    transform: translateY(-50%);
+    color: $txt-body;
+    cursor: pointer;
+    .svg {
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+    }
+}
+
+.otp-block {
+    &__head {
+        padding: 1.5rem 0;
+        text-align: center;
+        h5 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &__footer {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    p {
+        font-size: 0.8rem;
+        color: $txt-gray;
+        padding-bottom: 0.5rem;
+    }
+    .otp-enter {
+        margin: 0 auto;
+        text-align: center;
+        .otp-inputs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            input.field-otp {
+                border: none;
+                border-radius: 0;
+                border: $border;
+                max-width: 30px;
+                text-align: center;
+                padding: 5px;
+                margin: 0 3px;
+                &:focus {
+                    border-color: #000;
+                }
+                &.is-invalid {
+                    border-color: red;
+                }
+            }
+        }
+    }
+    .otp-success {
+        text-align: center;
+        .img {
+            max-width: 80px;
+            margin: 2rem auto;
+        }
+        h5 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

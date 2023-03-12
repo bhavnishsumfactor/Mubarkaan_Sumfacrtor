@@ -1,0 +1,94 @@
+.mini-cart {
+    @include media-breakpoint-up(xl) {
+        min-width: 400px;
+    }
+    @include media-breakpoint-down(lg) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        h6 {
+            font-size: 1rem;
+            padding: 0;
+            margin: 0;
+            flex: 1;
+        }
+        .close {
+            .svg {
+                fill: currentColor;
+                opacity: 0.6;
+                width: 20px;
+                height: 20px;
+                margin: 0;
+            }
+        }
+    }
+    &__body {
+        padding: 10px 1rem;
+        //max-height: 340px;
+        @include media-breakpoint-down(lg) {
+            //max-height: 100%;
+        }
+        position: relative;
+    }
+    &__foot {
+        padding: 1rem;
+        border-top: $border;
+        @include media-breakpoint-down(lg) {
+            margin-top: auto;
+        }
+        .cart-total {
+            .list-group-item {
+                padding: 0.5rem 0;
+            }
+        }
+    }
+    .list-cart {
+        min-height: 200px;
+        overflow-y: auto;
+        .list-group-item {
+            flex-direction: row;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        .list-cart .product-price del {
+            display: block;
+        }
+        .cart-total .hightlighted {
+            padding: 0.375rem 0;
+        }
+        .product-profile__thumbnail img {
+            max-width: 50px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .product-profile {
+            max-width: inherit;
+            margin-bottom: 0;
+        }
+        .list-cart .product-price {
+            flex: 0 0 auto;
+            padding-top: 0;
+            padding-#{$start-direction}: 25px;
+        }
+    }
+}
+
+.cart__points {
+    //background-color: $bg-gray;
+    // padding: 0 0.7rem;
+    text-align: center;
+    border-radius: 4px;
+    //margin-top: 1rem;
+    font-size: 0.8rem;
+    color: $brand-color;
+    .svg {
+        fill: currentColor;
+        margin-#{$end-direction}: 5px;
+    }
+}

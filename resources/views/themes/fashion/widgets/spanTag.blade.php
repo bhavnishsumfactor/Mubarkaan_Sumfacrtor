@@ -1,0 +1,1 @@
+<span>{{__('LBL_WIDGETNAME_SPANTAG')}}</span>

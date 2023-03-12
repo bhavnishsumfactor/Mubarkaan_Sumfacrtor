@@ -1,0 +1,13 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+  .media-actions{
+    .btn-pro-delete {
+      right: 20px;
+    }
+  }
+}
+
+.media-body {
+  flex: 1;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="zs-store-add-product" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 64 54" style="enable-background:new 0 0 64 54;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#001684;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#E6EEF9;}
+	.st3{fill:none;stroke:#001684;}
+</style>
+<g>
+	<path class="st0" d="M0,0h64v54H0V0z"/>
+	<path class="st1" d="M2,46h3v1H2V46z M0,46h1v1H0V46z M59,46h3v1h-3V46z M63,46h1v1h-1V46z"/>
+	<path class="st2" d="M8,21h48v26H8V21z"/>
+	<g transform="translate(8 7)">
+		<g>
+			<path id="store-add-product-a" class="st0" d="M2,0h44v40H2V0z"/>
+		</g>
+		<path class="st3" d="M2.5,0.5h43v39h-43V0.5z"/>
+	</g>
+	<g transform="translate(8 7)">
+		<g>
+			<path id="store-add-product-b" class="st2" d="M30,18h10v8H30V18z"/>
+		</g>
+		<path class="st3" d="M30.5,18.5h9v7h-9V18.5z"/>
+	</g>
+	<g transform="translate(8 7)">
+		<g>
+			<path id="store-add-product-c" class="st2" d="M12,0h13l-4.2,10L12,7.2V0z"/>
+		</g>
+		<path class="st3" d="M12.5,0.5v6.3l8,2.6l3.8-8.9H12.5z"/>
+	</g>
+	<g transform="matrix(-1 0 0 1 69 7)">
+		<g>
+			<path id="store-add-product-d" class="st2" d="M24,0h13l-4.2,10L24,7.2V0z"/>
+		</g>
+		<path class="st3" d="M24.5,0.5v6.3l8,2.6l3.8-8.9H24.5z"/>
+	</g>
+	<path class="st1" d="M32,16h1v5h-1V16z M32,23h1v5h-1V23z M32,30h1v5h-1V30z M32,37h1v5h-1V37z"/>
+	<g transform="translate(2 23)">
+		<g>
+			<path id="store-add-product-e" class="st2" d="M4,0h10v5H4V0z"/>
+		</g>
+		<path class="st3" d="M4.5,0.5h9v4h-9V0.5z"/>
+	</g>
+	<path class="st1" d="M19,32h3v5h-3V32z"/>
+	<g transform="translate(2 23)">
+		<g>
+			<path id="store-add-product-f" class="st2" d="M4,18h10v6H4V18z"/>
+		</g>
+		<path class="st3" d="M4.5,18.5h9v5h-9V18.5z"/>
+	</g>
+	<g transform="translate(2 23)">
+		<g>
+			<path id="store-add-product-g" class="st0" d="M0,4h18v15H0V4z"/>
+		</g>
+		<path class="st3" d="M0.5,4.5h17v14h-17V4.5z"/>
+	</g>
+	<path class="st1" d="M6,31h2v2H6V31z"/>
+	<g>
+		<g transform="translate(38 35)">
+			<g>
+				<path id="store-add-product-h" class="st2" d="M0,0h4.1L8,2.7v6L6.4,10l-1.8,2H0V0z"/>
+			</g>
+			<path class="st3" d="M0.5,0.5v11h3.8l1.7-1.9l1.4-1.2V2.9L4,0.5H0.5z"/>
+		</g>
+		<g transform="matrix(-1 0 0 1 70 35)">
+			<g>
+				<path id="store-add-product-i" class="st2" d="M12,0h4.1L20,2.7v6L18.4,10l-1.8,2H12V0z"/>
+			</g>
+			<path class="st3" d="M12.5,0.5v11h3.8l1.7-1.9l1.4-1.2V2.9L16,0.5H12.5z"/>
+		</g>
+		<g transform="translate(38 35)">
+			<g>
+				<path id="store-add-product-j" class="st0" d="M7,3h6v6H7V3z"/>
+			</g>
+			<path class="st3" d="M7.5,3.5h5v5h-5V3.5z"/>
+		</g>
+	</g>
+</g>
+</svg>

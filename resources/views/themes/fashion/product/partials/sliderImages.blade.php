@@ -21,7 +21,11 @@
             @endif            
     </div>    
 </div>
+<script  src="{{ asset('js/jquery.elevatezoom.js') }}"></script>
 <script>
+    
+    // $("img").elevateZoom({easing : true});
+    
     $(document).ready(function() {
       
         var $status = $('.slideCount');
@@ -32,6 +36,8 @@
                 //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
                 var i = (currentSlide ? currentSlide : 0) + 1;
                 $status.html(i + '<span>|</span>' + slick.slideCount);
+                  // add hover on current slide
+                  $(slick.$slides.get(currentSlide ? currentSlide : 0)).find('img:first').elevateZoom({easing : true});
             });
 
         $('.js--product-gallery').slick({
